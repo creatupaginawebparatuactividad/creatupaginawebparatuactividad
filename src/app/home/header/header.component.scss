@@ -2,14 +2,14 @@
 
 // Small devices (landscape phones, 0px and up)
 @media (min-width: 0px) {
-  @import "./home-mobile.component.scss";
+  @import "./header-mobile.component.scss";
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  @import "./home-tablet.component.scss";
+  @import "./header-tablet.component.scss";
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  @import "./home-desktop.component.scss";
+  @import "./header-desktop.component.scss";
 }
