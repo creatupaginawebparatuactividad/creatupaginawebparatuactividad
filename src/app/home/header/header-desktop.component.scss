@@ -1,19 +1,37 @@
 .header-container {
-    height: 200px;
-  }
-  
-  .logo {
-    width: 120px;
-  }
-  
-  .marine-color {
-    background-color: #00229c;
-  }
-  
-  .hover-white {
-    color: white;
-  }
-  
-  .hover-white:hover {
-    color: aqua;
-  }
+  height: 200px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.marine-color {
+  background-color: #012e46;
+}
+
+.hover-white {
+  color: white;
+}
+
+.hover-white:hover {
+  color: #808080;
+}
+
+.que-hacemos-drop {
+  display: none;
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  right: 285px;
+  margin-top: 350px;
+  background-color: #012e46;
+}
+
+.que-hacemos-drop:hover {
+  display: block;
+}
+
+.que-hacemos-selector:hover + .que-hacemos-drop {
+  display: block;
+}
