@@ -38,4 +38,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 https://creatupaginawebparatuact-80022.web.app/
 
 
-##
+## Collaborators
+
+Iván Gómez Morales
