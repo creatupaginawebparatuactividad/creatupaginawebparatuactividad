@@ -1,12 +1,15 @@
-.background-cima {
-  background-image: url("./../../../assets/cima.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 1200px;
+/*Globas styles*/
 
-}
-
-.body-container {
-  height: 3600px;
-}
+// Small devices (landscape phones, 0px and up)
+@media (min-width: 0px) {
+    @import "./body-mobile.component.scss";
+  }
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    @import "./body-tablet.component.scss";
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    @import "./body-desktop.component.scss";
+  }

@@ -1,0 +1,35 @@
+.background-cima {
+  background-image: url("./../../../assets/cima.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 1200px;
+}
+
+.body-container {
+  height: 3600px;
+}
+
+.first-container {
+  margin-top: 6rem;
+  height: 400px;
+}
+
+.middle-container {
+  position: relative;
+  height: 250px;
+  width: 750px;
+  background-color: white;
+  bottom: 250px;
+}
+
+.middle-container-title {
+  font-size: 50px;
+  color: #012e46;
+}
+
+.marine-color {
+  background-color: #012e46;
+  padding: 15px;
+  font-size: 20px;
+}
