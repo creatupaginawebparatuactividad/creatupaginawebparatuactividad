@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  phoneIcon = 'assets/phone-icon.png';
+  emailIcon = 'assets/email-icon.png';
 }
