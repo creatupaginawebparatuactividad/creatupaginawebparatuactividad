@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/creatupaginawebparatuactividad",
+    "public": "dist/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
