@@ -17,6 +17,7 @@ export class AppComponent {
   ngOnInit(): void {
     this.meta.addTag({ name: 'description', content: 'Este es un artículo sobre optimización SEO en Angular.' });
     this.meta.addTag({ name: 'keywords', content: 'Angular, SEO, meta etiquetas, optimización' });
+    this.meta.addTag({ name: 'keywords', content: 'Creamos tu web Lora Gomez' });
     this.titleService.setTitle('Página de Inicio - Mi Sitio Web');
   }
 }
