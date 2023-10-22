@@ -15,8 +15,8 @@ export class AppComponent {
     private titleService: Title) { }
   
   ngOnInit(): void {
-    this.meta.addTag({ name: 'description', content: 'Creamos paginas web para empresas.' });
-    this.meta.addTag({ name: 'keywords', content: 'Creamos tu web Lora Gomez' });
-    this.titleService.setTitle('Creamos tu web');
+    this.meta.addTag({ name: 'description', content: 'Creamos páginas web para empresas.' });
+    this.meta.addTag({ name: 'keywords', content: 'Web para empresas, Lora Gómez, Web Lora, Crea tu web con Lora' });
+    this.titleService.setTitle('Tu web con Seo');
   }
 }
