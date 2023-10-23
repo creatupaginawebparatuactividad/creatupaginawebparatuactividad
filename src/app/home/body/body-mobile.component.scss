@@ -1,0 +1,54 @@
+.background-cima {
+  background-image: url("./../../../assets/cima.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 1200px;
+}
+
+.body-container {
+  height: 2400px;
+}
+
+.first-container {
+  margin-top: 6rem;
+  height: 400px;
+}
+
+.middle-container {
+  position: relative;
+  height: 250px;
+  width: 750px;
+  background-color: white;
+  bottom: 250px;
+}
+.middle-container-title {
+  font-size: 50px;
+  color: #012e46;
+}
+
+.middle-container-button {
+  background-color: #012e46;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.marine-text-color {
+  color: #012e46;
+}
+
+.first-button {
+  background-color: #012e46;
+  padding: 10px;
+  font-size: 16px;
+}
+.second-container {
+  height: 500px;
+  background-color: #d5eefc;
+  margin-top: 15rem;
+}
+
+.second-container-box {
+    width: 800px;
+    height: 100%;
+  }

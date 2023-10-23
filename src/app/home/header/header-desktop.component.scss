@@ -1,5 +1,5 @@
 .header-container {
-  height: 200px;
+  height: 100px;
 }
 
 .logo {
@@ -34,4 +34,14 @@
 
 .que-hacemos-selector:hover + .que-hacemos-drop {
   display: block;
+}
+
+.mobile-text-secondary {
+  font-size: 35px;
+}
+
+.header-button-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }

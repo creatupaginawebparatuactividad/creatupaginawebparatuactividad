@@ -1,9 +1,7 @@
-.header-container {
-  height: 200px;
-}
-
-.logo {
-  width: 180px;
+.menu {
+  display: flex;
+  align-items: center;
+  height: 100px;
 }
 
 .marine-color {
@@ -18,6 +16,14 @@
   color: #808080;
 }
 
+.que-hacemos-drop:hover {
+  display: block;
+}
+
+.que-hacemos-selector:hover + .que-hacemos-drop {
+  display: block;
+}
+
 .que-hacemos-drop {
   display: none;
   height: 250px;
@@ -30,17 +36,4 @@
 
 .que-hacemos-drop:hover {
   display: block;
-}
-
-.que-hacemos-selector:hover + .que-hacemos-drop {
-  display: block;
-}
-
-.mobile-text-secondary {
-  font-size: 46px;
-  margin-left: 40px;
-}
-
-.header-button-container {
-  display: none;
 }

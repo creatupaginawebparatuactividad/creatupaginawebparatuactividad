@@ -6,9 +6,10 @@ import {  NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, BodyComponent, FooterComponent],
+  declarations: [HomeComponent, HeaderComponent, BodyComponent, FooterComponent, MenuComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

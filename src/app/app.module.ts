@@ -4,7 +4,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {provideClientHydration} from '@angular/platform-browser';
+import {
+  bootstrapApplication,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
