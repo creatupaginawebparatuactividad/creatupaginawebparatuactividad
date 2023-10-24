@@ -15,8 +15,8 @@ export class AppComponent {
     private titleService: Title) { }
   
   ngOnInit(): void {
-    this.meta.addTag({ name: 'description', content: 'Creamos páginas web para empresas.' });
-    this.meta.addTag({ name: 'keywords', content: 'Web para empresas, Lora Gómez, Web Lora, Crea tu web con Lora' });
-    this.titleService.setTitle('Tu web con Seo');
+    this.titleService.setTitle('Seo web con Raul Lora, desarrollamos tu web para tu negocio y la posicionamos');
+    this.meta.addTag({ name: 'description', content: 'Creamos páginas web para empresas y particulares. Te ofrecemos confianza y compromiso. Trabajamos para ti.' });
+    this.meta.addTag({ name: 'keywords', content: 'Seo web con Raul Lora' });
   }
 }
