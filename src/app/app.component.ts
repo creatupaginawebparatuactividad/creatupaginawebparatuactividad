@@ -15,8 +15,8 @@ export class AppComponent {
     private titleService: Title) { }
   
   ngOnInit(): void {
-    this.titleService.setTitle('Seo web con Raul Lora, desarrollamos tu web para tu negocio y la posicionamos');
+    this.titleService.setTitle('Seo web con Raul Lora, desarrollamos tu web para tu negocio y la posicionamos en google');
     this.meta.addTag({ name: 'description', content: 'Creamos páginas web para empresas y particulares. Te ofrecemos confianza y compromiso. Trabajamos para ti.' });
-    this.meta.addTag({ name: 'keywords', content: 'Seo web con Raul Lora' });
+    this.meta.addTag({ name: 'keywords', content: 'Seo web con Raul Lora, Pagina web con Raul Lora, Desarrollo web con Raul Lora, Crea tu pagina con Raul Lora' });
   }
 }
