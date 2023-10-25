@@ -7,7 +7,7 @@
 }
 
 .body-container {
-  height: 2400px;
+  height: 2600px;
 }
 
 .first-container {
@@ -16,7 +16,7 @@
 
 .middle-container {
   position: relative;
-  height: 250px;
+  height: 350px;
   width: 750px;
   background-color: white;
   bottom: 250px;
@@ -29,7 +29,9 @@
 .middle-container-button {
   background-color: #012e46;
   padding: 15px;
-  font-size: 20px;
+  width: 330px;
+  height: 80px;
+  font-size: 30px;
 }
 
 .marine-text-color {
@@ -38,16 +40,30 @@
 
 .first-button {
   background-color: #012e46;
-  padding: 10px;
-  font-size: 16px;
+  padding: 15px;
+  width: 330px;
+  height: 80px;
+  font-size: 30px;
 }
 .second-container {
-  height: 500px;
+  height: 1400px;
   background-color: #d5eefc;
-  margin-top: 15rem;
+  margin-top: 1rem;
 }
 
 .second-container-box {
   width: 800px;
   height: 100%;
+}
+
+.h4 {
+  font-size: 40px;
+}
+
+.h1 {
+  font-size: 50px;
+}
+
+.text-home {
+  font-size: 35px;
 }

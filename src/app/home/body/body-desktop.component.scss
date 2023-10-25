@@ -33,6 +33,8 @@
   background-color: #012e46;
   padding: 15px;
   font-size: 20px;
+  width: 240px;
+  height: 60px;
 }
 
 .marine-text-color {
@@ -43,6 +45,8 @@
   background-color: #012e46;
   padding: 10px;
   font-size: 16px;
+  width: 240px;
+  height: 60px;
 }
 
 .second-container {
@@ -54,4 +58,16 @@
 .second-container-box {
   width: 800px;
   height: 100%;
+}
+
+.h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+.h1 {
+  font-size: calc(2em + 0.3vw);
+}
+
+.text-home {
+  font-size: 16px;
 }
