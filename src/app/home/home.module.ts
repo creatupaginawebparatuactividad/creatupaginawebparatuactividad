@@ -7,9 +7,10 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
+import { MobileFooterComponent } from './mobile-footer/mobile-footer.component';
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, BodyComponent, FooterComponent, MenuComponent],
+  declarations: [HomeComponent, HeaderComponent, BodyComponent, FooterComponent, MenuComponent, MobileFooterComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
