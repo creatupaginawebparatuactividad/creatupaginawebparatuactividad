@@ -10,10 +10,23 @@
 
 .hover-white {
   color: white;
+  cursor: pointer;
 }
 
 .hover-white:hover {
-  color: #808080;
+  color: #0d6efd;
+}
+
+.que-hacemos-drop {
+  display: none;
+  height: 370px;
+  width: 300px;
+  position: absolute;
+  right: 130px;
+  margin-top: 395px;
+  background-color: #012e46;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .que-hacemos-drop:hover {
@@ -24,16 +37,7 @@
   display: block;
 }
 
-.que-hacemos-drop {
-  display: none;
-  height: 250px;
-  width: 300px;
-  position: absolute;
-  right: 285px;
-  margin-top: 350px;
-  background-color: #012e46;
-}
-
-.que-hacemos-drop:hover {
-  display: block;
+.active{
+  color: #0d6efd;
+  text-decoration: none;
 }

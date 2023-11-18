@@ -1,62 +1,66 @@
-
 <div class="row  marine-color menu">
 
-        <div class="col h-100 d-flex justify-content-end align-items-center">
-    
-            <div class="me-4 h-100 d-flex align-items-center">
-                <a class="mb-0 text-decoration-none fw-bold hover-white" href="">Home</a>
-    
-    
-            </div>
-            <a class="mb-0 text-decoration-none fw-bold hover-white" href="">Quiénes somos</a>
-            <a class="h-100 d-flex align-items-center ms-4 mb-0 text-decoration-none fw-bold hover-white que-hacemos-selector"
-                href="">
-                Qué Hacemos ...
-            </a>
-            <div class="que-hacemos-drop">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col mt-3">
-                            <a class="mb-0 text-decoration-none fw-bold hover-white" href="">
-                                <p class="ms-4"> Tu página web a medida</p>
-                            </a>
-                        </div>
+    <div class="col h-100 d-flex justify-content-end align-items-center menu-selector">
+
+        <a class="me-4 mb-0 text-decoration-none fw-bold hover-white active" (click)="setMenuLinksStyleSelected($event)"
+            id="Home">Home</a>
+
+        <a class="mb-0 text-decoration-none fw-bold hover-white" (click)="setMenuLinksStyleSelected($event)"
+            id="Quiénes somos">Quiénes somos</a>
+        <a class=" d-flex align-items-center ms-4 mb-0 text-decoration-none fw-bold hover-white que-hacemos-selector"
+            (click)="setMenuLinksStyleSelected($event)" id="Qué Hacemos ...">
+            Qué Hacemos ...
+        </a>
+        <div class="que-hacemos-drop">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col mt-3">
+                        <a class="mb-0 text-decoration-none fw-bold hover-white"
+                            (click)="setMenuLinksStyleSelected($event)" id="Tu página web a medida">
+                            <p class="ms-4 mt-5">Tu página web a medida</p>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col mt-4">
-                            <a class="mb-0 text-decoration-none fw-bold hover-white" href="">
-                                <p class="ms-4"> SEO, posicionamos tu web</p>
-                            </a>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-4">
+                        <a class="mb-0 text-decoration-none fw-bold hover-white"
+                            (click)="setMenuLinksStyleSelected($event)" id="SEO, posicionamos tu web">
+                            <p class="ms-4">SEO, posicionamos tu web</p>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col mt-4">
-                            <a class="mb-0 text-decoration-none fw-bold hover-white" href="">
-                                <p class="ms-4"> Dominio personalizado </p>
-                            </a>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-4">
+                        <a class="mb-0 text-decoration-none fw-bold hover-white"
+                            (click)="setMenuLinksStyleSelected($event)" id="Dominio personalizado">
+                            <p class="ms-4">Dominio personalizado</p>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col mt-4">
-                            <a class="mb-0 text-decoration-none fw-bold hover-white" href="">
-                                <p class="ms-4"> Evolutivos de tu web</p>
-                            </a>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-4">
+                        <a class="mb-0 text-decoration-none fw-bold hover-white"
+                            (click)="setMenuLinksStyleSelected($event)" id="Evolutivos de tu web">
+                            <p class="ms-4">Evolutivos de tu web</p>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col mt-4">
-                            <a class="mb-0 text-decoration-none fw-bold hover-white" href="">
-                                <p class="ms-4"> Soporte y mantenimiento</p>
-                            </a>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-4">
+                        <a class="mb-0 text-decoration-none fw-bold hover-white"
+                            (click)="setMenuLinksStyleSelected($event)" id="Soporte y mantenimiento">
+                            <p class="ms-4">Soporte y mantenimiento</p>
+                        </a>
                     </div>
                 </div>
             </div>
-            <a class="ms-4 mb-0 text-decoration-none fw-bold hover-white" href="">Portafolio</a>
-            <a class="ms-4 mb-0 text-decoration-none fw-bold hover-white" href="">Blog</a>
-            <a class="ms-4 me-3 mb-0 text-decoration-none fw-bold hover-white" href="">Contacto</a>
         </div>
-    
+        <a class="ms-4 mb-0 text-decoration-none fw-bold hover-white" (click)="setMenuLinksStyleSelected($event)"
+            id="Portafolio">Portafolio</a>
+        <a class="ms-4 mb-0 text-decoration-none fw-bold hover-white" (click)="setMenuLinksStyleSelected($event)"
+            id="Blog">Blog</a>
+        <a class="ms-4 me-3 mb-0 text-decoration-none fw-bold hover-white" (click)="setMenuLinksStyleSelected($event)"
+            id="Contacto">Contacto</a>
     </div>
 
-    
+</div>

@@ -8,9 +8,10 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { MobileFooterComponent } from './mobile-footer/mobile-footer.component';
+import { SlideMobileMenuComponent } from './slide-mobile-menu/slide-mobile-menu.component';
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, BodyComponent, FooterComponent, MenuComponent, MobileFooterComponent],
+  declarations: [HomeComponent, HeaderComponent, BodyComponent, FooterComponent, MenuComponent, MobileFooterComponent, SlideMobileMenuComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

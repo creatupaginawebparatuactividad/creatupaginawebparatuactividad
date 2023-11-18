@@ -4,10 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {
-  bootstrapApplication,
-  provideClientHydration,
-} from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -19,7 +15,7 @@ import {
     AppRoutingModule,
     NgbModule,
   ],
-  providers: [provideClientHydration()],
-  bootstrap: [AppComponent]
+  providers: [],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -1,0 +1,51 @@
+.mobile-menu {
+  display: block;
+}
+
+.list-icon {
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.list-icon:hover {
+  color: #7bacf7;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.slide {
+  z-index: 3000;
+  height: 250vh;
+  background-color: red;
+  animation: fadeInLeft 0.4s 1;
+  position: absolute;
+  top: 0;
+  width: 110%;
+}
+
+.slide-back {
+  z-index: 3000;
+  height: 250vh;
+  background-color: red;
+  animation: fadeInRight 0.8s 1;
+  right: 110%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

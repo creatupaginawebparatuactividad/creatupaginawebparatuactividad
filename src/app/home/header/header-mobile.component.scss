@@ -15,30 +15,12 @@
 }
 
 .hover-white:hover {
-  color: #808080;
-}
-
-.que-hacemos-drop {
-  display: none;
-  height: 250px;
-  width: 300px;
-  position: absolute;
-  right: 285px;
-  margin-top: 350px;
-  background-color: #012e46;
-}
-
-.que-hacemos-drop:hover {
-  display: block;
-}
-
-.que-hacemos-selector:hover + .que-hacemos-drop {
-  display: block;
+  color: #0d6efd;
 }
 
 .mobile-text-secondary {
   font-size: 46px;
-  margin-left: calc(2em + 0.3vw);
+  margin-left: calc(1.2em + 0.9vw);
 }
 
 .header-button-container {
