@@ -1,66 +1,86 @@
-<!-- <div class="mobile-menu">
-    <div class="row">
-        <div class="col ">
-            <i class="bi bi-list list-icon text-primary position-absolute" (click)="openSlideMenu()"></i>
-            <div class="col fs-1 fw-bold mt-5 text-center">Menu</div>
-            <hr class="mt-5">
-        </div>
-    </div>
-</div>
-<div class="row slide-menu-selector slide-back ">
-    <i class="bi bi-list list-icon text-primary position-absolute" (click)="openSlideMenu()"></i>
-</div> -->
-
-<ion-menu contentId="main-content" class="width-100-v">
+<ion-menu contentId="main-content" class="width-80-v">
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar class="colore">
       <div class="menu-icon"></div>
-      <ion-title>
-        <h4 class="fs-1">Menu Content</h4>
-      </ion-title>
+
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
+    <div class="mt-150px">
+      <dl>
+        <dd class="menu-font-size fw-bold mt-5 ms-5">
+          <div class="d-flex align-items-center span-color">
+            <ion-icon name="home"></ion-icon>
+            <span class="ms-5">Home</span>
+          </div>
+        </dd>
 
-    <ion-button expand="block" class="mt-4 height-100px">
-      <span class="fs-1">Home</span>
-    </ion-button>
+        <dd class="menu-font-size fw-bold mt-5 ms-5">
+          <div class="d-flex align-items-center span-color">
+            <ion-icon name="help"></ion-icon>
+            <span class="ms-5">Quiénes somos</span>
+          </div>
 
-    <ion-button expand="block" class="mt-4 height-100px">
-      <span class="fs-1">Quiénes somos</span>
-    </ion-button>
+        </dd>
 
-    <ion-button expand="block" class="mt-4 height-100px">
-      <span class="fs-1">Tu página web a medida</span>
-    </ion-button>
+        <dd class="menu-font-size fw-bold mt-5 ms-5">
+          <div class="d-flex align-items-center span-color">
+            <ion-icon name="color-wand"></ion-icon>
+            <span class="ms-5"> Tu página web a medida</span>
+          </div>
+        </dd>
 
-    <ion-button expand="block" class="mt-4 height-100px">
-      <span class="fs-1">SEO, posicionamos tu web</span>
-    </ion-button>
+        <dd class="menu-font-size fw-bold mt-5 ms-5">
+          <div class="d-flex align-items-center span-color">
+            <ion-icon name="color-wand"></ion-icon>
+            <span class="ms-5">SEO, posicionamos tu web</span>
+          </div>
+        </dd>
 
-    <ion-button expand="block" class="mt-4 height-100px">
-      <span class="fs-1">Dominio personalizado</span>
-    </ion-button>
+        <dd class="menu-font-size fw-bold mt-5 ms-5">
+          <div class="d-flex align-items-center span-color">
+            <ion-icon name="create"></ion-icon>
+            <span class="ms-5">Dominio personalizado</span>
+          </div>
+        </dd>
 
-    <ion-button expand="block" class="mt-4 height-100px">
-      <span class="fs-1">Evolutivos de tu web</span>
-    </ion-button>
+        <dd class="menu-font-size fw-bold mt-5 ms-5">
+          <div class="d-flex align-items-center span-color">
+            <ion-icon name="add"></ion-icon>
+            <span class="ms-5">Evolutivos de tu web</span>
+          </div>
+        </dd>
 
-    <ion-button expand="block" class="mt-4 height-100px">
-      <span class="fs-1">Soporte y mantenimiento</span>
-    </ion-button>
+        <dd class="menu-font-size fw-bold mt-5 ms-5">
+          <div class="d-flex align-items-center span-color">
+            <ion-icon name="information"></ion-icon>
+            <span class="ms-5">Soporte y mantenimiento</span>
+          </div>
+        </dd>
 
-    <ion-button expand="block" class="mt-4 height-100px">
-      <span class="fs-1">Portafolio</span>
-    </ion-button>
+        <dd class="menu-font-size fw-bold mt-5 ms-5">
+          <div class="d-flex align-items-center span-color">
+            <ion-icon name="information"></ion-icon>
+            <span class="ms-5">Portafolio</span>
+          </div>
+        </dd>
 
-    <ion-button expand="block" class="mt-4 height-100px">
-      <span class="fs-1">Blog</span>
-    </ion-button>
+        <dd class="menu-font-size fw-bold mt-5 ms-5">
+          <div class="d-flex align-items-center span-color">
+            <ion-icon name="wallet"></ion-icon>
+            <span class="ms-5">Blog</span>
+          </div>
+        </dd>
 
-    <ion-button expand="block" class="mt-4 height-100px">
-      <span class="fs-1">Contacto</span>
-    </ion-button>
+        <dd class="menu-font-size fw-bold mt-5 ms-5">
+          <div class="d-flex align-items-center span-color">
+            <ion-icon name="wallet"></ion-icon>
+            <span class="ms-5">Contacto</span>
+          </div>
+        </dd>
+
+      </dl>
+    </div>
 
   </ion-content>
 </ion-menu>
@@ -69,7 +89,7 @@
     <ion-toolbar>
       <ion-buttons slot="start">
         <ion-menu-button>
-          <ion-icon name="menu" class="menu-icon"></ion-icon>
+          <ion-icon name="menu" class="menu-icon span-color"></ion-icon>
         </ion-menu-button>
       </ion-buttons>
       <ion-title>
