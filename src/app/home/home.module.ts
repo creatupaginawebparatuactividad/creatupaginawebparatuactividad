@@ -9,13 +9,15 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { MobileFooterComponent } from './mobile-footer/mobile-footer.component';
 import { SlideMobileMenuComponent } from './slide-mobile-menu/slide-mobile-menu.component';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [HomeComponent, HeaderComponent, BodyComponent, FooterComponent, MenuComponent, MobileFooterComponent, SlideMobileMenuComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    NgbDropdownModule
+    NgbDropdownModule,
+    IonicModule
   ]
 })
 export class HomeModule { }

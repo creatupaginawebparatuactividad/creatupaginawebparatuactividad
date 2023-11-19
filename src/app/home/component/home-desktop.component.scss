@@ -1,3 +1,10 @@
 .container-screen {
-  height: 250vh;
 }
+
+.mobile-screen{
+    display: none;
+}
+
+.desktop-screen {
+    display: block;
+  }

@@ -1,4 +1,4 @@
-<div class="mobile-menu">
+<!-- <div class="mobile-menu">
     <div class="row">
         <div class="col ">
             <i class="bi bi-list list-icon text-primary position-absolute" (click)="openSlideMenu()"></i>
@@ -9,4 +9,79 @@
 </div>
 <div class="row slide-menu-selector slide-back ">
     <i class="bi bi-list list-icon text-primary position-absolute" (click)="openSlideMenu()"></i>
-</div>
+</div> -->
+
+<ion-menu contentId="main-content" class="width-100-v">
+  <ion-header>
+    <ion-toolbar>
+      <div style="width: 90px; height: 90px;"></div>
+      <ion-title>
+        <h4 class="fs-1">Menu Content</h4>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+
+    <ion-button expand="block" class="mt-4 height-100px">
+      <span class="fs-1">Home</span>
+    </ion-button>
+
+    <ion-button expand="block" class="mt-4 height-100px">
+      <span class="fs-1">Quiénes somos</span>
+    </ion-button>
+
+    <ion-button expand="block" class="mt-4 height-100px">
+      <span class="fs-1">Tu página web a medida</span>
+    </ion-button>
+
+    <ion-button expand="block" class="mt-4 height-100px">
+      <span class="fs-1">SEO, posicionamos tu web</span>
+    </ion-button>
+
+    <ion-button expand="block" class="mt-4 height-100px">
+      <span class="fs-1">Dominio personalizado</span>
+    </ion-button>
+
+    <ion-button expand="block" class="mt-4 height-100px">
+      <span class="fs-1">Evolutivos de tu web</span>
+    </ion-button>
+
+    <ion-button expand="block" class="mt-4 height-100px">
+      <span class="fs-1">Soporte y mantenimiento</span>
+    </ion-button>
+
+    <ion-button expand="block" class="mt-4 height-100px">
+      <span class="fs-1">Portafolio</span>
+    </ion-button>
+
+    <ion-button expand="block" class="mt-4 height-100px">
+      <span class="fs-1">Blog</span>
+    </ion-button>
+
+    <ion-button expand="block" class="mt-4 height-100px">
+      <span class="fs-1">Contacto</span>
+    </ion-button>
+
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button>
+          <ion-icon name="menu" style="width: 90px; height: 90px;"></ion-icon>
+        </ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        <h4 class="fs-1">Menu</h4>
+
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <app-header></app-header>
+    <app-menu></app-menu>
+    <app-body></app-body>
+    <app-footer></app-footer>
+    <app-mobile-footer></app-mobile-footer>
+  </ion-content>
