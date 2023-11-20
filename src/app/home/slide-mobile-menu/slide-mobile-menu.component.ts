@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-slide-mobile-menu',
@@ -6,16 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./slide-mobile-menu.component.scss']
 })
 export class SlideMobileMenuComponent {
-  menu='assets/menu.png';
+  menu = 'assets/menu.png';
 
-  openSlideMenu() {
-    const a = document.querySelector(".slide-menu-selector") as HTMLElement;
-    if (a.classList.contains("slide")) {
-      a.classList.remove("slide");
-      a.classList.add("slide-back");
-    } else {
-      a.classList.remove("slide-back");
-      a.classList.add("slide");
-    }
+  constructor(private ionMenu: MenuController) { }
+
+  openMenu() {
+    this.ionMenu.open();
   }
 }

@@ -85,15 +85,9 @@
   </ion-content>
 </ion-menu>
 <div class="ion-page" id="main-content">
-  <ion-header class="no-shadow">
-    <ion-toolbar class="ion-toolbar">
-      <ion-buttons slot="start">
-        <ion-menu-button class="menu-icon">
-          <img class="ms-3 mt-3 mb-3 menu-icon" [src]="menu" alt="Menu icon">
-        </ion-menu-button>
-      </ion-buttons>
-      
-    </ion-toolbar>
+  <ion-header class="no-shadow ion-toolbar">
+    <img class="ms-3 me-3 mt-3 mb-3 menu-icon ion-toolbar" [src]="menu" alt="Menu icon" (click)="openMenu()">
+
   </ion-header>
   <ion-content class="ion-padding">
     <app-header></app-header>
