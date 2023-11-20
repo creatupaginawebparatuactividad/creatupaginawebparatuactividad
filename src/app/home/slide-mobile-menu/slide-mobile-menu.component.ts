@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./slide-mobile-menu.component.scss']
 })
 export class SlideMobileMenuComponent {
-  
+  menu='assets/menu.png';
 
   openSlideMenu() {
     const a = document.querySelector(".slide-menu-selector") as HTMLElement;
