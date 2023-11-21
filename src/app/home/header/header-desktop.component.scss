@@ -24,7 +24,7 @@
   width: 300px;
   position: absolute;
   right: 285px;
-  margin-top: 350px;
+  margin-top: 360px;
   background-color: #012e46;
 }
 
@@ -36,9 +36,14 @@
   display: block;
 }
 
-.mobile-text-secondary {
+.desktop-text-secondary {
+  display: block;
   font-size: 35px;
   margin-left: 40px;
+}
+
+.mobile-text-secondary {
+  display: none;
 }
 
 .header-button-container {

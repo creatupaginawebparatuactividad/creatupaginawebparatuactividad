@@ -20,19 +20,20 @@ export class MenuComponent {
   }
 
   setMenuLinksStyle(event: Event) {
-    const menuNode = document.querySelector(".menu-selector") as HTMLElement;
-    const links = menuNode.getElementsByTagName("a");
+    // const menuNode = document.querySelector(".menu-selector") as HTMLElement;
+    // const links = menuNode.getElementsByTagName("a");
     // listA.childNodes.forEach(childMenuLinksNode => {
     //   const menuLinkNode = childMenuLinksNode as HTMLElement;
     //   menuLinkNode.classList.remove("active")
     // });
 
-    for (let index = 0; index < links.length; index++) {
-      const menuLinkNode = links[index] as HTMLElement;
-      menuLinkNode.classList.remove("active")
-    }
+    // for (let index = 0; index < links.length; index++) {
+    //   const menuLinkNode = links[index] as HTMLElement;
+    //   menuLinkNode.classList.remove("active");
+
+    // }
     const menuLinkNodeSelected = event.currentTarget as HTMLElement;
-    menuLinkNodeSelected.classList.add("active");
+    // menuLinkNodeSelected.classList.add("active");
     return menuLinkNodeSelected.id;
   }
 

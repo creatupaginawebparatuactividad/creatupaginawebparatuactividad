@@ -19,8 +19,14 @@
 }
 
 .mobile-text-secondary {
+  display: block;
   font-size: 46px;
   margin-left: calc(2.7em + 0.9vw);
+}
+
+.desktop-text-secondary {
+  display: none;
+  
 }
 
 .header-button-container {

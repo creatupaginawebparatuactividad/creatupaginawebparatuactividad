@@ -22,7 +22,7 @@
   height: 370px;
   width: 300px;
   position: absolute;
-  right: 130px;
+  right: 110px;
   margin-top: 395px;
   background-color: #012e46;
   border-bottom-left-radius: 15px;
@@ -39,5 +39,10 @@
 
 .active{
   color: #0d6efd;
+  text-decoration: none;
+}
+
+.in-active{
+  color: white;
   text-decoration: none;
 }
