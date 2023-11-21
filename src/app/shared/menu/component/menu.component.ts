@@ -40,7 +40,6 @@ export class MenuComponent {
 
       case "Qué Hacemos ...":
         console.log("Qué Hacemos ...");
-        this.router.navigateByUrl('que-hacemos');
         break;
 
       case "Tu página web a medida":
