@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-
-export interface HtmlElementReturned {
-  classList: String[];
-}
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -10,9 +7,9 @@ export interface HtmlElementReturned {
   styleUrls: ['./menu.component.scss']
 })
 
-
-
 export class MenuComponent {
+
+  constructor(private router: Router) { }
 
   setMenuLinksStyleSelected(event: Event) {
     const menuLinkNodeSelectedId = this.setMenuLinksStyle(event);
@@ -20,20 +17,13 @@ export class MenuComponent {
   }
 
   setMenuLinksStyle(event: Event) {
-    // const menuNode = document.querySelector(".menu-selector") as HTMLElement;
-    // const links = menuNode.getElementsByTagName("a");
-    // listA.childNodes.forEach(childMenuLinksNode => {
-    //   const menuLinkNode = childMenuLinksNode as HTMLElement;
-    //   menuLinkNode.classList.remove("active")
-    // });
-
-    // for (let index = 0; index < links.length; index++) {
-    //   const menuLinkNode = links[index] as HTMLElement;
-    //   menuLinkNode.classList.remove("active");
-
-    // }
     const menuLinkNodeSelected = event.currentTarget as HTMLElement;
-    // menuLinkNodeSelected.classList.add("active");
+    const arra = (menuLinkNodeSelected.parentNode as HTMLElement).getElementsByTagName("a")
+    for (let index = 0; index < arra.length; index++) {
+      const menuLinkNode = arra[index] as HTMLElement;
+      menuLinkNode.classList.remove("active");
+    }
+    menuLinkNodeSelected.classList.add("active");
     return menuLinkNodeSelected.id;
   }
 
@@ -45,42 +35,53 @@ export class MenuComponent {
 
       case "Quiénes somos":
         console.log("Quiénes somos");
+        this.router.navigateByUrl('quienes-somos');
         break;
 
       case "Qué Hacemos ...":
         console.log("Qué Hacemos ...");
+        this.router.navigateByUrl('que-hacemos');
         break;
 
       case "Tu página web a medida":
         console.log("Tu página web a medida");
+        this.router.navigateByUrl('tu-pagina-web-a-medida');
         break;
 
       case "SEO, posicionamos tu web":
         console.log("SEO, posicionamos tu web");
+        this.router.navigateByUrl('seo-posicionamos-tu-web');
+
         break;
 
       case "Dominio personalizado":
         console.log("Dominio personalizado");
+        this.router.navigateByUrl('dominio-personalizado');
         break;
 
       case "Evolutivos de tu web":
         console.log("Evolutivos de tu web");
+        this.router.navigateByUrl('evolutivos-de-tu-web');
         break;
 
       case "Soporte y mantenimiento":
         console.log("Soporte y mantenimiento");
+        this.router.navigateByUrl('soporte-y-mantenimiento');
         break;
 
       case "Portafolio":
         console.log("Portafolio");
+        this.router.navigateByUrl('portafolio');
         break;
 
       case "Blog":
         console.log("Blog");
+        this.router.navigateByUrl('blog');
         break;
 
       case "Contacto":
         console.log("Contacto");
+        this.router.navigateByUrl('contacto');
         break;
 
       default:

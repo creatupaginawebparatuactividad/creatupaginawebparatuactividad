@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { EvolutivosDeTuWebRoutingModule } from './evolutivos-de-tu-web-routing.module';
 import { EvolutivosDeTuWebComponent } from './component/evolutivos-de-tu-web.component';
+import { HeaderModule } from '../shared/header/header.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { EvolutivosDeTuWebComponent } from './component/evolutivos-de-tu-web.com
   ],
   imports: [
     CommonModule,
-    EvolutivosDeTuWebRoutingModule
+    EvolutivosDeTuWebRoutingModule,
+    HeaderModule
   ]
 })
 export class EvolutivosDeTuWebModule { }

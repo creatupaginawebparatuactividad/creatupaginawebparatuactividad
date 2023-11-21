@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { TuPaginaWebAMedidaRoutingModule } from './tu-pagina-web-a-medida-routing.module';
 import { TuPaginaWebAMedidaComponent } from './component/tu-pagina-web-a-medida.component';
+import { HeaderModule } from '../shared/header/header.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { TuPaginaWebAMedidaComponent } from './component/tu-pagina-web-a-medida.
   ],
   imports: [
     CommonModule,
-    TuPaginaWebAMedidaRoutingModule
+    TuPaginaWebAMedidaRoutingModule,
+    HeaderModule
   ]
 })
 export class TuPaginaWebAMedidaModule { }

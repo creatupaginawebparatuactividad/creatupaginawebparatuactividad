@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BlogRoutingModule } from './blog-routing.module';
 import { BlogComponent } from './component/blog.component';
+import { HeaderModule } from '../shared/header/header.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { BlogComponent } from './component/blog.component';
   ],
   imports: [
     CommonModule,
-    BlogRoutingModule
+    BlogRoutingModule,
+    HeaderModule
   ]
 })
 export class BlogModule { }

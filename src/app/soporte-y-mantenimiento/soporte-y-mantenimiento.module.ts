@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SoporteYMantenimientoRoutingModule } from './soporte-y-mantenimiento-routing.module';
 import { SoporteYMantenimientoComponent } from './component/soporte-y-mantenimiento.component';
+import { HeaderModule } from '../shared/header/header.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { SoporteYMantenimientoComponent } from './component/soporte-y-mantenimie
   ],
   imports: [
     CommonModule,
-    SoporteYMantenimientoRoutingModule
+    SoporteYMantenimientoRoutingModule,
+    HeaderModule
   ]
 })
 export class SoporteYMantenimientoModule { }
