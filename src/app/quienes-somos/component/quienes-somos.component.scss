@@ -1,7 +1,16 @@
-.container-info{
-    width: 600px;
-}
+/*Globas styles*/
 
-.container-history{
-    width: 600px;
-}
+// Small devices (landscape phones, 0px and up)
+@media (min-width: 0px) {
+    @import "./quienes-somos-mobile.component.scss";
+  }
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    @import "./quienes-somos-tablet.component.scss";
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    @import "./quienes-somos-desktop.component.scss";
+  }
+  
