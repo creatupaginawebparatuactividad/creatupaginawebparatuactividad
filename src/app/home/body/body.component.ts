@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-body',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class BodyComponent {
 
+  constructor(private router: Router) { }
+
+  navigateToContacto() {
+    this.router.navigateByUrl('contacto');
+  }
 }
