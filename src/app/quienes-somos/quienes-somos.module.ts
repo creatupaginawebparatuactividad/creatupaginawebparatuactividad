@@ -6,6 +6,7 @@ import { HeaderModule } from '../shared/header/header.module';
 import { MenuModule } from '../shared/menu/menu.module';
 import { FooterModule } from '../shared/footer/footer.module';
 import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [QuienesSomosComponent],
@@ -15,7 +16,8 @@ import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module
     HeaderModule,
     MenuModule,
     FooterModule,
-    MobileFooterModule
+    MobileFooterModule,
+    IonicModule
   ]
 })
 export class QuienesSomosModule { }
