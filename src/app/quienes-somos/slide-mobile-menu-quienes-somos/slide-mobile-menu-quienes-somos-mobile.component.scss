@@ -33,7 +33,16 @@
 }
 
 .ion-toolbar {
-   position: absolute;
-   top: 55px;
-   right: 20px;
+  position: absolute;
+  top: 55px;
+  right: 20px;
+}
+
+a {
+  color: #012e46;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0d6efd;
 }
