@@ -45,15 +45,7 @@ export class MenuComponent implements OnInit {
 
   setMenuLinksStyle(event: Event) {
     this.menuService.resetNavStyles();
-
-    const menuLinkNodeSelected = event.currentTarget as HTMLElement;
-    // const arra = (menuLinkNodeSelected.parentNode as HTMLElement).getElementsByTagName("a")
-    // for (let index = 0; index < arra.length; index++) {
-    //   const menuLinkNode = arra[index] as HTMLElement;
-    //   menuLinkNode.classList.remove("active");
-    // }
-    // menuLinkNodeSelected.classList.add("active");
-    return menuLinkNodeSelected.id;
+    return (event.currentTarget as HTMLElement).id;
   }
 
   navigateToPageSelected(idPage: String) {
@@ -121,8 +113,6 @@ export class MenuComponent implements OnInit {
       default:
         break;
     }
-
   }
-
 
 }
