@@ -1,0 +1,96 @@
+<ion-menu contentId="main-content" class="width-80-v">
+    <ion-header>
+      <ion-toolbar class="colore">
+        <div class="menu-icon"></div>
+  
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <div class="mt-150px">
+        <dl>
+          <dd class="menu-font-size fw-bold mt-5 ms-5">
+            <div class="d-flex align-items-center span-color">
+              <ion-icon name="home"></ion-icon>
+              <span class="ms-5">Home</span>
+            </div>
+          </dd>
+  
+          <dd class="menu-font-size fw-bold mt-5 ms-5">
+            <div class="d-flex align-items-center span-color">
+              <ion-icon name="help"></ion-icon>
+              <span class="ms-5">Quiénes somos</span>
+            </div>
+  
+          </dd>
+  
+          <dd class="menu-font-size fw-bold mt-5 ms-5">
+            <div class="d-flex align-items-center span-color">
+              <ion-icon name="color-wand"></ion-icon>
+              <span class="ms-5"> Tu página web a medida</span>
+            </div>
+          </dd>
+  
+          <dd class="menu-font-size fw-bold mt-5 ms-5">
+            <div class="d-flex align-items-center span-color">
+              <ion-icon name="trending-up"></ion-icon>
+              <span class="ms-5">SEO, posicionamos tu web</span>
+            </div>
+          </dd>
+  
+          <dd class="menu-font-size fw-bold mt-5 ms-5">
+            <div class="d-flex align-items-center span-color">
+              <ion-icon name="create"></ion-icon>
+              <span class="ms-5">Dominio personalizado</span>
+            </div>
+          </dd>
+  
+          <dd class="menu-font-size fw-bold mt-5 ms-5">
+            <div class="d-flex align-items-center span-color">
+              <ion-icon name="add"></ion-icon>
+              <span class="ms-5">Evolutivos de tu web</span>
+            </div>
+          </dd>
+  
+          <dd class="menu-font-size fw-bold mt-5 ms-5">
+            <div class="d-flex align-items-center span-color">
+              <ion-icon name="information"></ion-icon>
+              <span class="ms-5">Soporte y mantenimiento</span>
+            </div>
+          </dd>
+  
+          <dd class="menu-font-size fw-bold mt-5 ms-5">
+            <div class="d-flex align-items-center span-color">
+              <ion-icon name="clipboard"></ion-icon>
+              <span class="ms-5">Portafolio</span>
+            </div>
+          </dd>
+  
+          <dd class="menu-font-size fw-bold mt-5 ms-5">
+            <div class="d-flex align-items-center span-color">
+              <ion-icon name="wallet"></ion-icon>
+              <span class="ms-5">Blog</span>
+            </div>
+          </dd>
+  
+          <dd class="menu-font-size fw-bold mt-5 ms-5">
+            <div class="d-flex align-items-center span-color">
+              <ion-icon name="wallet"></ion-icon>
+              <span class="ms-5">Contacto</span>
+            </div>
+          </dd>
+  
+        </dl>
+      </div>
+  
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-content class="ion-padding">
+      <app-header></app-header>
+      <img class="ms-3 me-3 mt-3 mb-3 menu-icon ion-toolbar" [src]="menu" alt="Menu icon" (click)="openMenu()">
+      
+      <app-menu></app-menu>
+      <app-body-quienes-somos></app-body-quienes-somos>
+      <app-footer></app-footer>
+      <app-mobile-footer></app-mobile-footer>
+    </ion-content>

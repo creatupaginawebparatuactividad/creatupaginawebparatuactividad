@@ -1,0 +1,39 @@
+.width-80-v {
+  --width: 80%;
+}
+
+.height-100px {
+  height: 100px;
+}
+
+.menu-icon {
+  width: 90px;
+  height: 90px;
+  --border-radius: 0;
+}
+
+.mt-150px {
+  margin-top: 150px;
+}
+
+.colore {
+  --background: #012e46;
+}
+
+.menu-font-size {
+  font-size: 40px;
+}
+
+.span-color {
+  color: #012e46;
+}
+
+.no-shadow {
+  box-shadow: none;
+}
+
+.ion-toolbar {
+   position: absolute;
+   top: 55px;
+   right: 20px;
+}

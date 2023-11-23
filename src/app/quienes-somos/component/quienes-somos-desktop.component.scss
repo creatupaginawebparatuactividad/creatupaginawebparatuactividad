@@ -1,36 +1,7 @@
-.container-info {
-  width: 600px;
+.mobile-screen{
+    display: none;
 }
 
-.container-history {
-  width: 600px;
-}
-
-.section-1 {
-  background-color: #d5eefc;
-}
-
-.position-icon {
-  position: absolute;
-  margin-left: -30px;
-}
-
-.quienes-somos-container {
-  background-image: url("./../../../assets/logo-quienes-somos.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.text-size {
-  font-size: 16px;
-}
-
-.desktop-section {
-  display: block;
-}
-
-.mobile-section {
-  display: none;
-}
-
+.desktop-screen {
+    display: block;
+  }

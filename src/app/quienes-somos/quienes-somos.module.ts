@@ -7,9 +7,11 @@ import { MenuModule } from '../shared/menu/menu.module';
 import { FooterModule } from '../shared/footer/footer.module';
 import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module';
 import { IonicModule } from '@ionic/angular';
+import { BodyQuienesSomosComponent } from './body-quienes-somos/body-quienes-somos.component';
+import { SlideMobileMenuQuienesSomosComponent } from './slide-mobile-menu-quienes-somos/slide-mobile-menu-quienes-somos.component';
 
 @NgModule({
-  declarations: [QuienesSomosComponent],
+  declarations: [QuienesSomosComponent, BodyQuienesSomosComponent, SlideMobileMenuQuienesSomosComponent],
   imports: [
     CommonModule,
     QuienesSomosRoutingModule,
