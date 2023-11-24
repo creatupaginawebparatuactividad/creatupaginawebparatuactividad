@@ -38,6 +38,5 @@ export class AppComponent {
           + 'Pagina web Valladolid, Pagina web Vizcaya, Pagina web Zamora, Pagina web Zaragoza'
       });
 
-
   }
 }
