@@ -1,0 +1,34 @@
+.first-size-text {
+  font-size: 60px;
+}
+
+.first-background {
+  background-image: url("./../../../assets/tecnology-person.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+}
+
+.marine-background {
+  background-color: #012e46;
+  opacity: 0.7;
+}
+
+.first-title {
+  font-size: 44px;
+  color: #012e46;
+}
+.first-description {
+  font-size: 24px;
+}
+
+.pink-background {
+  background: linear-gradient(
+    90deg,
+    rgba(244, 133, 235, 0.66) 0%,
+    rgba(255, 255, 255, 1) 72%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  opacity: 0.7;
+}

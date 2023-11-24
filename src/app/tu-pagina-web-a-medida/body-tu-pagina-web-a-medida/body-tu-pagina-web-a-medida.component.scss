@@ -1,0 +1,15 @@
+/*Globas styles*/
+
+// Small devices (landscape phones, 0px and up)
+@media (min-width: 0px) {
+  @import "./body-tu-pagina-web-a-medida-mobile.component.scss";
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  @import "./body-tu-pagina-web-a-medida-tablet.component.scss";
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  @import "./body-tu-pagina-web-a-medida-desktop.component.scss";
+}

@@ -7,11 +7,16 @@ import { HeaderModule } from '../shared/header/header.module';
 import { MenuModule } from '../shared/menu/menu.module';
 import { FooterModule } from '../shared/footer/footer.module';
 import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module';
+import { IonicModule } from '@ionic/angular';
+import { SlideMobileMenuTuPaginaWebAMedidaComponent } from './slide-mobile-menu-tu-pagina-web-a-medida/slide-mobile-menu-tu-pagina-web-a-medida.component';
+import { BodyTuPaginaWebAMedidaComponent } from './body-tu-pagina-web-a-medida/body-tu-pagina-web-a-medida.component';
 
 
 @NgModule({
   declarations: [
-    TuPaginaWebAMedidaComponent
+    TuPaginaWebAMedidaComponent,
+    SlideMobileMenuTuPaginaWebAMedidaComponent,
+    BodyTuPaginaWebAMedidaComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +24,8 @@ import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module
     HeaderModule,
     MenuModule,
     FooterModule,
-    MobileFooterModule
+    MobileFooterModule,
+    IonicModule
   ]
 })
 export class TuPaginaWebAMedidaModule { }
