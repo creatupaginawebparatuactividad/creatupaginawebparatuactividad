@@ -9,6 +9,8 @@ import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module
 import { IonicModule } from '@ionic/angular';
 import { BodyQuienesSomosComponent } from './body-quienes-somos/body-quienes-somos.component';
 import { SlideMobileMenuQuienesSomosComponent } from './slide-mobile-menu-quienes-somos/slide-mobile-menu-quienes-somos.component';
+import { TapeModule } from '../shared/tape/tape.module';
+import { LightTitleModule } from '../shared/light-title/light-title.module';
 
 @NgModule({
   declarations: [QuienesSomosComponent, BodyQuienesSomosComponent, SlideMobileMenuQuienesSomosComponent],
@@ -19,6 +21,8 @@ import { SlideMobileMenuQuienesSomosComponent } from './slide-mobile-menu-quiene
     MenuModule,
     FooterModule,
     MobileFooterModule,
+    TapeModule,
+    LightTitleModule,
     IonicModule
   ]
 })

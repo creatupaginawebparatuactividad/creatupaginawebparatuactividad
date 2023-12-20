@@ -1,0 +1,16 @@
+{
+  "home": {
+    "title": "SOBRE NOSOTROS",
+    "firstDescription": "Nos dedicamos al software, nos dedicamos a ti. ",
+    "secondDescription": "Queremos darte lo que quieres y lo que necesitas. Para ello contamos con la experiencia de los mejores profesionales, con la máxima dedicación y compromiso, con el fin de que termines con una página web que impulse tus ventas y llegues a lo mas alto.",
+    "thirdDescription": "Siempre tendrás la voz, nos enfocamos en ti",
+    "textButton": "¿Hablamos?"
+  },
+  "quienesSomos":{
+    "title": "¿Quienes somos?",
+    "firstDescription": "Somos tu aliado, para hacertelo todo mas fácil. ",
+    "secondDescription": "En todo momento te asesoramos, te aconsejamos y te brindamos todas las decisiones que tomes y a medida",
+    "thirdDescription": "Siempre tendrás la voz, nos enfocamos en ti",
+    "textButton": "¿Hablamos?"
+  }
+}
