@@ -11,6 +11,7 @@ import { IonicModule } from '@ionic/angular';
 import { SlideMobileMenuTuPaginaWebAMedidaComponent } from './slide-mobile-menu-tu-pagina-web-a-medida/slide-mobile-menu-tu-pagina-web-a-medida.component';
 import { BodyTuPaginaWebAMedidaComponent } from './body-tu-pagina-web-a-medida/body-tu-pagina-web-a-medida.component';
 import { LightTitleModule } from '../shared/light-title/light-title.module';
+import { TapeModule } from '../shared/tape/tape.module';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { LightTitleModule } from '../shared/light-title/light-title.module';
     FooterModule,
     MobileFooterModule,
     LightTitleModule,
+    TapeModule,
     IonicModule
   ]
 })

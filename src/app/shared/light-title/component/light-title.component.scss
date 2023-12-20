@@ -1,14 +1,16 @@
-.pink-background {
-    background: linear-gradient(
-      90deg,
-      rgba(244, 133, 235, 0.66) 0%,
-      rgba(255, 255, 255, 1) 72%,
-      rgba(255, 255, 255, 1) 100%
-    );
-    opacity: 0.7;
-  }
 
-  .first-title {
-    font-size: 44px;
-    color: #012e46;
-  }
+  /*Globas styles*/
+
+// Small devices (landscape phones, 0px and up)
+@media (min-width: 0px) {
+  @import "./light-title-mobile.component.scss";
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  @import "./light-title-tablet.component.scss";
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  @import "./light-title-desktop.component.scss";
+}

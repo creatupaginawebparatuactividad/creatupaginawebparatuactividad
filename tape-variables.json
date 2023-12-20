@@ -7,10 +7,17 @@
     "textButton": "¿Hablamos?"
   },
   "quienesSomos":{
-    "title": "¿Quienes somos?",
+    "title": "¿QUÍENES SOMOS?",
     "firstDescription": "Somos tu aliado, para hacertelo todo mas fácil. ",
     "secondDescription": "En todo momento te asesoramos, te aconsejamos y te brindamos todas las decisiones que tomes y a medida",
     "thirdDescription": "Siempre tendrás la voz, nos enfocamos en ti",
+    "textButton": "¿Hablamos?"
+  },
+  "tuPaginaWebAMedida": {
+    "title": "TU PÁGINA WEB A MEDIDA",
+    "firstDescription": "¿A que esperas? ¡Presupuesto sin compromiso!. ",
+    "secondDescription": "Haznos una propuesta, y te hacemos un calculo sin compromiso. ¡Ya veras como no te lo esperas!",
+    "thirdDescription": "Además, pregunta por nuestros servicios clouds, ¡Te sorprenderá!",
     "textButton": "¿Hablamos?"
   }
 }

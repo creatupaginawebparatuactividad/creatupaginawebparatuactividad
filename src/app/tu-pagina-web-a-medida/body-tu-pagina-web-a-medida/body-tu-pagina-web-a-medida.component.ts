@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import lightTitleJson from './../../../../light-title-variables.json';
+import tajeJson from './../../../../tape-variables.json';
 
 @Component({
   selector: 'app-body-tu-pagina-web-a-medida',
@@ -8,4 +9,6 @@ import lightTitleJson from './../../../../light-title-variables.json';
 })
 export class BodyTuPaginaWebAMedidaComponent {
   lightTitle: any = lightTitleJson;
+  tape: any = tajeJson;
+
 }
