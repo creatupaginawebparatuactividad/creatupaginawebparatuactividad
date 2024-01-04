@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import tajeJson from './../../../../tape-variables.json';
 
 @Component({
   selector: 'app-body-seo-posicionamos-tu-web',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./body-seo-posicionamos-tu-web.component.scss']
 })
 export class BodySeoPosicionamosTuWebComponent {
+  tape: any = tajeJson;
 
 }

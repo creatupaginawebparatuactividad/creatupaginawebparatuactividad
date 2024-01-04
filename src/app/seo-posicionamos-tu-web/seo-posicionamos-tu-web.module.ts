@@ -9,6 +9,8 @@ import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module
 import { SlideMobileMenuSeoPosicionamosTuWebComponent } from './slide-mobile-menu-seo-posicionamos-tu-web/slide-mobile-menu-seo-posicionamos-tu-web.component';
 import { BodySeoPosicionamosTuWebComponent } from './body-seo-posicionamos-tu-web/body-seo-posicionamos-tu-web.component';
 import { IonicModule } from '@ionic/angular';
+import { MobileBodyHeaderModule } from '../shared/mobile-body-header/mobile-body-header.module';
+import { TapeModule } from '../shared/tape/tape.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { IonicModule } from '@ionic/angular';
     MenuModule,
     FooterModule,
     MobileFooterModule,
-    IonicModule
+    IonicModule,
+    MobileBodyHeaderModule,
+    TapeModule
   ]
 })
 export class SeoPosicionamosTuWebModule { }
