@@ -6,10 +6,15 @@ import { HeaderModule } from '../shared/header/header.module';
 import { MenuModule } from '../shared/menu/menu.module';
 import { FooterModule } from '../shared/footer/footer.module';
 import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module';
+import { SlideMobileMenuSeoPosicionamosTuWebComponent } from './slide-mobile-menu-seo-posicionamos-tu-web/slide-mobile-menu-seo-posicionamos-tu-web.component';
+import { BodySeoPosicionamosTuWebComponent } from './body-seo-posicionamos-tu-web/body-seo-posicionamos-tu-web.component';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
-    SeoPosicionamosTuWebComponent
+    SeoPosicionamosTuWebComponent,
+    SlideMobileMenuSeoPosicionamosTuWebComponent,
+    BodySeoPosicionamosTuWebComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +22,8 @@ import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module
     HeaderModule,
     MenuModule,
     FooterModule,
-    MobileFooterModule
+    MobileFooterModule,
+    IonicModule
   ]
 })
 export class SeoPosicionamosTuWebModule { }
