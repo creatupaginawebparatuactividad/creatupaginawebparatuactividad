@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { TuPaginaWebAMedidaRoutingModule } from './tu-pagina-web-a-medida-routing.module';
 import { TuPaginaWebAMedidaComponent } from './component/tu-pagina-web-a-medida.component';
 import { HeaderModule } from '../shared/header/header.module';
@@ -13,13 +12,8 @@ import { BodyTuPaginaWebAMedidaComponent } from './body-tu-pagina-web-a-medida/b
 import { LightTitleModule } from '../shared/light-title/light-title.module';
 import { TapeModule } from '../shared/tape/tape.module';
 
-
 @NgModule({
-  declarations: [
-    TuPaginaWebAMedidaComponent,
-    SlideMobileMenuTuPaginaWebAMedidaComponent,
-    BodyTuPaginaWebAMedidaComponent
-  ],
+  declarations: [ TuPaginaWebAMedidaComponent, SlideMobileMenuTuPaginaWebAMedidaComponent,  BodyTuPaginaWebAMedidaComponent],
   imports: [
     CommonModule,
     TuPaginaWebAMedidaRoutingModule,
