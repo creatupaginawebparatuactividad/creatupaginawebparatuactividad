@@ -11,6 +11,7 @@ import { BodySeoPosicionamosTuWebComponent } from './body-seo-posicionamos-tu-we
 import { IonicModule } from '@ionic/angular';
 import { MobileBodyHeaderModule } from '../shared/mobile-body-header/mobile-body-header.module';
 import { TapeModule } from '../shared/tape/tape.module';
+import { DesktopBodyHeaderModule } from '../shared/desktop-body-header/desktop-body-header.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TapeModule } from '../shared/tape/tape.module';
     MobileFooterModule,
     IonicModule,
     MobileBodyHeaderModule,
+    DesktopBodyHeaderModule,
     TapeModule
   ]
 })
