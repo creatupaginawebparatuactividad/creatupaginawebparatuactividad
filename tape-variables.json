@@ -26,5 +26,12 @@
     "secondDescription": "Haznos una propuesta, y te hacemos un calculo sin compromiso. ¡Ya veras como no te lo esperas!",
     "thirdDescription": "Te contamos como elevamos tu web a la posicion top, ¡Te sorprenderá!",
     "textButton": "Aumentar las ventas hoy"
+  },
+  "dominioPersonalizado": {
+    "title": "DOMINIO PERSONALIZADO",
+    "firstDescription": "¡Presupuesto sin compromiso!. ",
+    "secondDescription": "Haznos una propuesta, y te hacemos un calculo sin compromiso. ¡Ya veras como no te lo esperas!",
+    "thirdDescription": "¿Hablamos de como te gustaria que fuese tu dominio?",
+    "textButton": "¡Empieza ya!"
   }
 }

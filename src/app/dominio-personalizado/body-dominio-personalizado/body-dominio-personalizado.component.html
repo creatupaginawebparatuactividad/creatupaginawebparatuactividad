@@ -1,0 +1,35 @@
+<app-mobile-body-header class="mobile-section" [title]="'Dominio personalizado'" [image]="'assets/dominio.jpg'">
+</app-mobile-body-header>
+
+<app-desktop-body-header class="desktop-section" [image]="'assets/dominio-desktop.webp'" [title]="'Tu dominio en LG:'"
+    [firstDescription]="'Podrás configurar fácilmente una sencilla página en la que personalizar tus datos e incluir un menesaje de bienvenida para tus visitantes.'"
+    [secondDescription]="'Ponemos a tu disponsición un Panel de Control propio, desde el que puedes gestionar tus servicios.'"
+    [thirdDescription]="'Disfrutarás de 1 año gratis para proteger los datos que utilizas al registrar un dominio.'">
+</app-desktop-body-header>
+
+<div class="container container-700 mt-5 mb-5 mobile-section">
+    <div class="row">
+        <div class="col">
+            <p class="title">Tu dominio en LG:
+
+            <p class="text-size">Podrás configurar fácilmente una sencilla página en la que personalizar tus datos e
+                incluir un menesaje de bienvenida para tus visitantes.
+                <br> <br>
+                En LG ponemos a tu disponsición un Panel de Control propio e intuitivo desde el que puedes gestionar
+                fácilmente tus servicios, como las DNS de tu dominio.
+                <br> <br>
+                Disfrutarás de 1 año gratis para proteger los datos que utilizas al registrar un dominio. Así nadie
+                podrá utilizarlos para hacer spam, telemarketing y datamining.
+                <br> <br>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<app-tape [title]="tape.dominioPersonalizado.title" 
+[firstDescription]="tape.dominioPersonalizado.firstDescription"
+    [secondDescription]="tape.dominioPersonalizado.secondDescription"
+    [thirdDescription]="tape.dominioPersonalizado.thirdDescription"
+     [textButton]="tape.dominioPersonalizado.textButton">
+</app-tape>
