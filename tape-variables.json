@@ -33,5 +33,13 @@
     "secondDescription": "Haznos una propuesta, y te hacemos un calculo sin compromiso. ¡Ya veras como no te lo esperas!",
     "thirdDescription": "¿Hablamos de como te gustaria que fuese tu dominio?",
     "textButton": "¡Empieza ya!"
+  },
+  "evolutivosDeTuWeb": {
+    "title": "EVOLUTIVOS DE TU WEB",
+    "firstDescription": "¡Presupuesto sin compromiso!. ",
+    "secondDescription": "Haznos una propuesta, y te hacemos un calculo sin compromiso. ¡Ya veras como no te lo esperas!",
+    "thirdDescription": "¿Hablamos de como te gustaria que fuese tu evolutivo?",
+    "textButton": "¡Sube tu evolutivo ya!"
   }
+  
 }

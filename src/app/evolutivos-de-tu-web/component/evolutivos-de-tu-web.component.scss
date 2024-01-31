@@ -1,0 +1,15 @@
+/*Globas styles*/
+
+// Small devices (landscape phones, 0px and up)
+@media (min-width: 0px) {
+    @import "./evolutivos-de-tu-web-mobile.component.scss";
+  }
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    @import "./evolutivos-de-tu-web-tablet.component.scss";
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    @import "./evolutivos-de-tu-web-desktop.component.scss";
+  }
