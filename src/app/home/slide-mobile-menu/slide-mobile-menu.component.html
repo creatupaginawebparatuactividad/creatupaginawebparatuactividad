@@ -8,12 +8,12 @@
   <ion-content class="ion-padding">
     <div class="mt-150px">
       <dl>
-        <dd class="menu-font-size fw-bold mt-5 ms-5">
+        <dt class="menu-font-size fw-bold mt-5 ms-5">
           <div class="d-flex align-items-center span-color">
             <ion-icon name="home"></ion-icon>
             <a class="ms-5" routerLink="">Home</a>
           </div>
-        </dd>
+        </dt>
 
         <dd class="menu-font-size fw-bold mt-5 ms-5">
           <div class="d-flex align-items-center span-color">
@@ -88,7 +88,7 @@
   <ion-content class="ion-padding">
     <app-header></app-header>
     <img class="ms-3 me-3 mt-3 mb-3 menu-icon ion-toolbar" [src]="menu" alt="Menu icon" (click)="openMenu()">
-    
+
     <app-menu></app-menu>
     <app-body></app-body>
     <app-footer></app-footer>
