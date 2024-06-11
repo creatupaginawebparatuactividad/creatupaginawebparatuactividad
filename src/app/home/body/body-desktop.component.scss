@@ -25,31 +25,31 @@
 }
 
 .middle-container-title {
-  font-size: 50px;
+  font-size: var(--desktop-font-xl);
   color: #012e46;
 }
 
 .middle-container-button {
   background-color: #012e46;
   padding: 15px;
-  font-size: 20px;
+  font-size: var(--desktop-font-m);
   width: 240px;
   height: 60px;
 }
 
 .h4 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: var(--desktop-font-m);
 }
 
 .h1 {
-  font-size: calc(2em + 0.3vw);
+  font-size: var(--desktop-font-xl);
   margin-top: 5rem;
 }
 
 .first-button {
   background-color: #012e46;
   padding: 10px;
-  font-size: 16px;
+  font-size: var(--desktop-font-s);
   width: 240px;
   height: 60px;
 }

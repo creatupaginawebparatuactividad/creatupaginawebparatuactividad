@@ -1,6 +1,6 @@
 /* GLOBAL */
 .text-size {
-  font-size: 16px;
+  font-size: var(--desktop-font-s);
 }
 
 .desktop-section {
@@ -12,7 +12,7 @@
 }
 
 .title{
-  font-size: xx-large;
+  font-size: var(--desktop-font-xl);
   font-weight: bold;
 }
 

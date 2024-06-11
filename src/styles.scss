@@ -3,3 +3,14 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+  --desktop-font-xl: 50px;
+  --desktop-font-m: 20px;
+  --desktop-font-s: 16px;
+
+  --mobile-font-xl: 65px;
+  --mobile-font-m: 40px;
+  --mobile-font-s: 30px;
+
+}

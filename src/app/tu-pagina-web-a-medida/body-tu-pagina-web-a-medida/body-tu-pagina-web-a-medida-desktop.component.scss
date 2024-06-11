@@ -1,5 +1,5 @@
 .first-size-text {
-  font-size: 60px;
+  font-size: var(--desktop-font-xl);
 }
 
 .first-background {
@@ -16,12 +16,12 @@
 }
 
 .first-title {
-  font-size: 44px;
+  font-size: var(--desktop-font-xl);
   color: #012e46;
 }
 
 .first-description {
-  font-size: 24px;
+  font-size: var(--desktop-font-m);
 }
 
 .screen-behavior {
@@ -37,10 +37,10 @@
 }
 
 .title {
-  font-size: xx-large;
+  font-size: var(--desktop-font-xl);
   font-weight: bold;
 }
 
 ul>li {
-  font-size: 24px;
+  font-size: var(--desktop-font-m);
 }

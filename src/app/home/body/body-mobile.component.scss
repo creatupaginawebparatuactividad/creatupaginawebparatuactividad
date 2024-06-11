@@ -22,7 +22,7 @@
   bottom: 160px;
 }
 .middle-container-title {
-  font-size: 50px;
+  font-size: var(--mobile-font-xl);
   color: #012e46;
 }
 
@@ -31,7 +31,7 @@
   padding: 15px;
   width: 330px;
   height: 80px;
-  font-size: 30px;
+  font-size: var(--mobile-font-s);
 }
 
 .second-container-box {
@@ -41,11 +41,11 @@
 }
 
 .h4 {
-  font-size: 40px;
+  font-size: var(--mobile-font-m);
 }
 
 .h1 {
-  font-size: 50px;
+  font-size: var(--mobile-font-xl);
   margin-top: -2rem;
 }
 
@@ -54,5 +54,5 @@
   padding: 15px;
   width: 330px;
   height: 80px;
-  font-size: 30px;
+  font-size: var(--mobile-font-s);
 }

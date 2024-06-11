@@ -4,14 +4,14 @@
 }
 
 .desktop-container-text {
-    height: 300px;
+    height: 400px;
 }
 
 .text-size {
-    font-size: 16px;
+  font-size: var(--desktop-font-m);
 }
 
 .title {
-    font-size: xx-large;
+  font-size: var(--desktop-font-xl);
     font-weight: bold;
 }

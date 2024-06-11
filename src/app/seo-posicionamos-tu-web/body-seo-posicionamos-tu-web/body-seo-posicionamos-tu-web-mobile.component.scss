@@ -1,6 +1,5 @@
-/* GLOBAL */
 .text-size {
-  font-size: 30px;
+  font-size: var(--mobile-font-m);
 }
 
 .desktop-section {
@@ -12,16 +11,11 @@
 }
 
 .title {
-  font-size: 65px;
+  font-size: var(--desktop-font-xl);
   font-weight: bold;
 }
 
-
-/* CUSTOM */
 .container-700 {
   height: 700px;
 }
 
-li {
-  font-size: 34px;
-}

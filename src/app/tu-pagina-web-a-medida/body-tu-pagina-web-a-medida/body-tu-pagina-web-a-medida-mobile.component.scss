@@ -1,15 +1,15 @@
 .first-title {
-  font-size: 44px;
+  font-size: var(--mobile-font-m);
   color: #012e46;
   margin-bottom: 3rem;
 }
 
 .first-description {
-  font-size: 34px;
+  font-size: var(--mobile-font-s);
 }
 
 li {
-  font-size: 34px;
+  font-size: var(--mobile-font-s);
 }
 
 .screen-behavior {
@@ -25,6 +25,6 @@ li {
 }
 
 .title{
-  font-size: 65px;
+  font-size: var(--mobile-font-xl);
   font-weight: bold;
 }
