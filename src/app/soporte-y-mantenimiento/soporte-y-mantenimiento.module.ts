@@ -7,11 +7,19 @@ import { HeaderModule } from '../shared/header/header.module';
 import { MenuModule } from '../shared/menu/menu.module';
 import { FooterModule } from '../shared/footer/footer.module';
 import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module';
+import { MobileBodyHeaderModule } from '../shared/mobile-body-header/mobile-body-header.module';
+import { BodySoporteYMantenimientoComponent } from './body-soporte-y-mantenimiento/body-soporte-y-mantenimiento.component';
+import { DesktopBodyHeaderModule } from '../shared/desktop-body-header/desktop-body-header.module';
+import { TapeModule } from '../shared/tape/tape.module';
+import { IonicModule } from '@ionic/angular';
+import { SlideSoporteYMantenimientoComponent } from './slide-soporte-y-mantenimiento/slide-soporte-y-mantenimiento.component';
 
 
 @NgModule({
   declarations: [
-    SoporteYMantenimientoComponent
+    SoporteYMantenimientoComponent,
+    BodySoporteYMantenimientoComponent,
+    SlideSoporteYMantenimientoComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +27,11 @@ import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module
     HeaderModule,
     MenuModule,
     FooterModule,
-    MobileFooterModule
+    MobileFooterModule,
+    MobileBodyHeaderModule,
+    DesktopBodyHeaderModule,
+    TapeModule,
+    IonicModule
   ]
 })
 export class SoporteYMantenimientoModule { }
