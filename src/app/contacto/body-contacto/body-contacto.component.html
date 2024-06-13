@@ -1,0 +1,46 @@
+<app-mobile-body-header class="mobile-section" [title]="'Contacto'"
+  [image]="'assets/contacto.webp'">
+</app-mobile-body-header>
+
+<app-desktop-body-header class="desktop-section" [image]="'assets/contacto-mobile.jpg'" [title]="'Contacto:'"
+  [firstDescription]="'Contacta con nosotros y te daremos toda la información'"
+  [secondDescription]="'Hablemos sobre que tipo de web vas a necesitar y te orientamos en tu camino.'"
+  [thirdDescription]="'Estamos para ti.'">
+</app-desktop-body-header>
+
+<div class="container container-700 mt-5 mb-5 mobile-section">
+  <div class="row">
+    <div class="col">
+      <p class="title">Contacto:
+
+      <p class="text-size">Contacta con nosotros y te daremos toda la información
+        <br> <br>
+        Hablemos sobre que tipo de web vas a necesitar y te orientamos en tu camino.
+        <br> <br>
+        Estamos para ti.
+        <br> <br>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<div class="container container-700 mt-5 mb-5">
+  <div class="row">
+    <div class="col text-size">
+      <P class="title">Contacto:</P>
+      <ul>
+        <li>Contacto 1.</li>
+        <li>Contacto 2.</li>
+        <li>Contacto 3.</li>
+        <li>Contacto 4.</li>
+        <li>Contacto 5.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<app-tape [title]="tape.contacto.title" [firstDescription]="tape.contacto.firstDescription"
+  [secondDescription]="tape.contacto.secondDescription"
+  [thirdDescription]="tape.contacto.thirdDescription" [textButton]="tape.contacto.textButton">
+</app-tape>
