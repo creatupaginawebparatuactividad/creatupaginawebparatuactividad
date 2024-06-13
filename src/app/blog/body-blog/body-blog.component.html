@@ -1,0 +1,46 @@
+<app-mobile-body-header class="mobile-section" [title]="'Blog'"
+  [image]="'assets/blog-mobile.jpg'">
+</app-mobile-body-header>
+
+<app-desktop-body-header class="desktop-section" [image]="'assets/blog.png'" [title]="'Blog:'"
+  [firstDescription]="'Consulta nuestro blog, te puede dar un toque de inspiracion.'"
+  [secondDescription]="'Hablemos sobre que tipo de web vas a necesitar y te orientamos en tu camino.'"
+  [thirdDescription]="'Justo lo que necesitas.'">
+</app-desktop-body-header>
+
+<div class="container container-700 mt-5 mb-5 mobile-section">
+  <div class="row">
+    <div class="col">
+      <p class="title">Blog:
+
+      <p class="text-size">Consulta nuestro blog, te puede dar un toque de inspiracion.
+        <br> <br>
+        Hablemos sobre que tipo de web vas a necesitar y te orientamos en tu camino.
+        <br> <br>
+        Justo lo que necesitas.
+        <br> <br>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<div class="container container-700 mt-5 mb-5">
+  <div class="row">
+    <div class="col text-size">
+      <P class="title">Blogs:</P>
+      <ul>
+        <li>Blog 1.</li>
+        <li>Blog 2.</li>
+        <li>Blog 3.</li>
+        <li>Blog 4.</li>
+        <li>Blog 5.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<app-tape [title]="tape.blog.title" [firstDescription]="tape.blog.firstDescription"
+  [secondDescription]="tape.blog.secondDescription"
+  [thirdDescription]="tape.blog.thirdDescription" [textButton]="tape.blog.textButton">
+</app-tape>

@@ -6,7 +6,7 @@
     "thirdDescription": "Siempre tendrás la voz, nos enfocamos en ti",
     "textButton": "¿Hablamos?"
   },
-  "quienesSomos":{
+  "quienesSomos": {
     "title": "¿QUÍENES SOMOS?",
     "firstDescription": "Somos tu aliado, para hacertelo todo mas fácil. ",
     "secondDescription": "En todo momento te asesoramos, te aconsejamos y te brindamos todas las decisiones que tomes y a medida",
@@ -54,6 +54,19 @@
     "secondDescription": "Haznos una propuesta, y te hacemos un calculo sin compromiso. ¡Ya veras como no te lo esperas!",
     "thirdDescription": "¿Hablamos de como te gustaria que fuese tu web?",
     "textButton": "¡Contrata ya!"
+  },
+  "blog": {
+    "title": "BLOG",
+    "firstDescription": "¡Consulta nuestro blog! ",
+    "secondDescription": "Haznos una propuesta, y te hacemos un calculo sin compromiso. ¡Ya veras como no te lo esperas!",
+    "thirdDescription": "¿Hablamos de como te gustaria que fuese tu web?",
+    "textButton": "¡Contrata ya!"
+  },
+  "contacto": {
+    "title": "CONTACTO",
+    "firstDescription": "¡Ponte en contacto con nosotros! ",
+    "secondDescription": "Haznos una propuesta, y te hacemos un calculo sin compromiso. ¡Ya veras como no te lo esperas!",
+    "thirdDescription": "¿Hablamos de como te gustaria que fuese tu web?",
+    "textButton": "¡Llamanos!"
   }
-
 }
