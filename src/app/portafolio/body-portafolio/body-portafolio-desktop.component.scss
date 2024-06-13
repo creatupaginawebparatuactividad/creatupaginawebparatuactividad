@@ -1,0 +1,16 @@
+.text-size {
+  font-size: var(--desktop-font-m);
+}
+
+.desktop-section {
+  display: block;
+}
+
+.mobile-section {
+  display: none;
+}
+
+.title {
+  font-size: var(--desktop-font-xl);
+  font-weight: bold;
+}

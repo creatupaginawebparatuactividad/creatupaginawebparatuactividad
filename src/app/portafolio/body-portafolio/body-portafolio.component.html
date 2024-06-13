@@ -1,0 +1,47 @@
+<app-mobile-body-header class="mobile-section" [title]="'Portafolio'" [image]="'assets/portafolio.png'">
+</app-mobile-body-header>
+
+<app-desktop-body-header class="desktop-section" [image]="'assets/portafolio-mobile.jpg'"
+    [title]="'Nuestro portafolio:'"
+    [firstDescription]="'Aqui te adjuntaremos algunos de nuestros ejemplos.'"
+    [secondDescription]="'Para que puedas ver algunas de nuestras webs y trabajos.'"
+    [thirdDescription]="'Espero que te guste.'">
+</app-desktop-body-header>
+
+<div class="container container-700 mt-5 mb-5 mobile-section">
+  <div class="row">
+    <div class="col">
+      <p class="title">Nuestro portafolio:
+
+      <p class="text-size">Aqui te adjuntaremos algunos de nuestros ejemplos.
+        <br> <br>
+        Para que puedas ver algunas de nuestras webs y trabajos.
+        <br> <br>
+        Espero que te guste.
+        <br> <br>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<div class="container container-700 mt-5 mb-5">
+  <div class="row">
+    <div class="col text-size">
+      <P class="title">Busca en Google:</P>
+      <ul>
+        <li>Crea tu pagina con Raúl Lora.</li>
+        <li>Crea tu pagina con Raúl Lora.</li>
+        <li>Crea tu pagina con Raúl Lora.</li>
+        <li>Crea tu pagina con Raúl Lora.</li>
+      </ul>
+
+    </div>
+
+  </div>
+</div>
+
+<app-tape [title]="tape.portafolio.title" [firstDescription]="tape.portafolio.firstDescription"
+    [secondDescription]="tape.portafolio.secondDescription"
+    [thirdDescription]="tape.portafolio.thirdDescription" [textButton]="tape.portafolio.textButton">
+</app-tape>

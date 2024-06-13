@@ -8,5 +8,4 @@ import tajeJson from './../../../../tape-variables.json';
 })
 export class BodyEvolutivosDeTuWebComponent {
   tape: any = tajeJson;
-
 }

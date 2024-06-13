@@ -7,11 +7,19 @@ import { HeaderModule } from '../shared/header/header.module';
 import { MenuModule } from '../shared/menu/menu.module';
 import { FooterModule } from '../shared/footer/footer.module';
 import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module';
+import { IonicModule } from '@ionic/angular';
+import { BodyPortafolioComponent } from './body-portafolio/body-portafolio.component';
+import { SlideMobileMenuPortafolioComponent } from './slide-mobile-menu-portafolio/slide-mobile-menu-portafolio.component';
+import { TapeModule } from '../shared/tape/tape.module';
+import { MobileBodyHeaderModule } from '../shared/mobile-body-header/mobile-body-header.module';
+import { DesktopBodyHeaderModule } from '../shared/desktop-body-header/desktop-body-header.module';
 
 
 @NgModule({
   declarations: [
-    PortafolioComponent
+    PortafolioComponent,
+    BodyPortafolioComponent,
+    SlideMobileMenuPortafolioComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +27,11 @@ import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module
     HeaderModule,
     MenuModule,
     FooterModule,
-    MobileFooterModule
+    MobileFooterModule,
+    IonicModule,
+    TapeModule,
+    MobileBodyHeaderModule,
+    DesktopBodyHeaderModule
   ]
 })
 export class PortafolioModule { }
