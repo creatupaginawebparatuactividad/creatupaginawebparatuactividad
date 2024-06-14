@@ -7,7 +7,7 @@ export class MenuService {
 
   constructor() { }
 
-  homeIsActive = true;
+  homeIsActive = false;
   quienesSomosIsActive = false;
   queHacemosIsActive = false;
   tuPaginaWebIsActive = false;

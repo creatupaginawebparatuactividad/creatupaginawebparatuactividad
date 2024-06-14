@@ -3,15 +3,15 @@
     <div class="col h-100 d-flex justify-content-end align-items-center menu-selector">
 
         <a class="me-4 mb-0 text-decoration-none fw-bold hover-white" [ngClass]="homeIsActive  ? 'active' : 'in-active'"
-            (click)="setMenuLinksStyleSelected($event)" id="Home">Home</a>
+            (click)="setMenuLinksStyleSelected($event)" id="">Home</a>
 
         <a class="mb-0 text-decoration-none fw-bold hover-white"
             [ngClass]="quienesSomosIsActive  ? 'active' : 'in-active'" (click)="setMenuLinksStyleSelected($event)"
-            id="Quiénes somos">Quiénes somos</a>
+            id="quienes-somos">Quiénes somos</a>
 
         <a class=" d-flex align-items-center ms-4 mb-0 text-decoration-none fw-bold hover-white que-hacemos-selector"
             [ngClass]="queHacemosIsActive  ? 'active' : 'in-active'" (click)="setMenuLinksStyleSelected($event)"
-            id="Qué Hacemos ...">
+            id="que-hacemos">
             Qué Hacemos ...
         </a>
         <div class="que-hacemos-drop">
@@ -20,7 +20,7 @@
                     <div class="col mt-3">
                         <a class="mb-0 text-decoration-none fw-bold hover-white"
                         [ngClass]="tuPaginaWebIsActive  ? 'active' : 'in-active'"
-                            (click)="setMenuLinksStyleSelected($event)" id="Tu página web a medida">
+                            (click)="setMenuLinksStyleSelected($event)" id="tu-pagina-web-a-medida">
                             <p class="ms-4 mt-5">Tu página web a medida</p>
                         </a>
                     </div>
@@ -29,7 +29,7 @@
                     <div class="col mt-4">
                         <a class="mb-0 text-decoration-none fw-bold hover-white"
                         [ngClass]="seoPosicionamosTuWebIsActive  ? 'active' : 'in-active'"
-                            (click)="setMenuLinksStyleSelected($event)" id="SEO, posicionamos tu web">
+                            (click)="setMenuLinksStyleSelected($event)" id="seo-posicionamos-tu-web">
                             <p class="ms-4">SEO, posicionamos tu web</p>
                         </a>
                     </div>
@@ -38,7 +38,7 @@
                     <div class="col mt-4">
                         <a class="mb-0 text-decoration-none fw-bold hover-white"
                         [ngClass]="dominioPersonalizadoIsActive  ? 'active' : 'in-active'"
-                            (click)="setMenuLinksStyleSelected($event)" id="Dominio personalizado">
+                            (click)="setMenuLinksStyleSelected($event)" id="dominio-personalizado">
                             <p class="ms-4">Dominio personalizado</p>
                         </a>
                     </div>
@@ -47,7 +47,7 @@
                     <div class="col mt-4">
                         <a class="mb-0 text-decoration-none fw-bold hover-white"
                         [ngClass]="evolutivosDeTuWebIsActive  ? 'active' : 'in-active'"
-                            (click)="setMenuLinksStyleSelected($event)" id="Evolutivos de tu web">
+                            (click)="setMenuLinksStyleSelected($event)" id="evolutivos-de-tu-web">
                             <p class="ms-4">Evolutivos de tu web</p>
                         </a>
                     </div>
@@ -56,25 +56,25 @@
                     <div class="col mt-4">
                         <a class="mb-0 text-decoration-none fw-bold hover-white"
                         [ngClass]="soporteYMantenimientoIsActive  ? 'active' : 'in-active'"
-                            (click)="setMenuLinksStyleSelected($event)" id="Soporte y mantenimiento">
+                            (click)="setMenuLinksStyleSelected($event)" id="soporte-y-mantenimiento">
                             <p class="ms-4">Soporte y mantenimiento</p>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="ms-4 mb-0 text-decoration-none fw-bold hover-white" 
+        <a class="ms-4 mb-0 text-decoration-none fw-bold hover-white"
         [ngClass]="portafolioIsActive  ? 'active' : 'in-active'"
         (click)="setMenuLinksStyleSelected($event)"
-            id="Portafolio">Portafolio</a>
+            id="portafolio">Portafolio</a>
         <a class="ms-4 mb-0 text-decoration-none fw-bold hover-white"
         [ngClass]="blogIsActive  ? 'active' : 'in-active'"
         (click)="setMenuLinksStyleSelected($event)"
-            id="Blog">Blog</a>
-        <a class="ms-4 me-3 mb-0 text-decoration-none fw-bold hover-white" 
+            id="blog">Blog</a>
+        <a class="ms-4 me-3 mb-0 text-decoration-none fw-bold hover-white"
         [ngClass]="contactoIsActive  ? 'active' : 'in-active'"
         (click)="setMenuLinksStyleSelected($event)"
-            id="Contacto">Contacto</a>
+            id="contacto">Contacto</a>
     </div>
 
 </div>

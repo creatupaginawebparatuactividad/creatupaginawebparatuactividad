@@ -12,7 +12,7 @@ export class MenuComponent implements OnInit {
 
   constructor(private router: Router, private menuService: MenuService) { }
 
-  homeIsActive = true;
+  homeIsActive = false;
   quienesSomosIsActive = false;
   queHacemosIsActive = false;
   tuPaginaWebIsActive = false;
@@ -25,88 +25,90 @@ export class MenuComponent implements OnInit {
   contactoIsActive = false;
 
   ngOnInit() {
-    this.homeIsActive = this.menuService.homeIsActive
-    this.quienesSomosIsActive = this.menuService.quienesSomosIsActive
-    this.queHacemosIsActive = this.menuService.queHacemosIsActive
-    this.tuPaginaWebIsActive = this.menuService.tuPaginaWebIsActive
-    this.seoPosicionamosTuWebIsActive = this.menuService.seoPosicionamosTuWebIsActive
-    this.dominioPersonalizadoIsActive = this.menuService.dominioPersonalizadoIsActive
-    this.evolutivosDeTuWebIsActive = this.menuService.evolutivosDeTuWebIsActive
-    this.soporteYMantenimientoIsActive = this.menuService.soporteYMantenimientoIsActive
-    this.portafolioIsActive = this.menuService.portafolioIsActive
-    this.blogIsActive = this.menuService.blogIsActive
-    this.contactoIsActive = this.menuService.contactoIsActive
+    const tab = window.location.href.split("http://localhost:4200/");
+    const page = tab[1]
+    this.setMenuLinksStyle()
+    this.navigateToPageSelected(page);
   }
 
   setMenuLinksStyleSelected(event: Event) {
-    const menuLinkNodeSelectedId = this.setMenuLinksStyle(event);
+    const menuLinkNodeSelectedId = (event.currentTarget as HTMLElement).id;
     this.navigateToPageSelected(menuLinkNodeSelectedId);
   }
 
-  setMenuLinksStyle(event: Event) {
-    this.menuService.resetNavStyles();
-    return (event.currentTarget as HTMLElement).id;
+  setMenuLinksStyle() {
+    this.homeIsActive = false;
+    this.quienesSomosIsActive = false;
+    this.queHacemosIsActive = false;
+    this.tuPaginaWebIsActive = false;
+    this.seoPosicionamosTuWebIsActive = false;
+    this.dominioPersonalizadoIsActive = false;
+    this.evolutivosDeTuWebIsActive = false;
+    this.soporteYMantenimientoIsActive = false;
+    this.portafolioIsActive = false;
+    this.blogIsActive = false;
+    this.contactoIsActive = false;
   }
 
   navigateToPageSelected(idPage: String) {
     switch (idPage) {
-      case "Home":
-        this.menuService.homeIsActive = true;
+      case "":
+        this.homeIsActive = true;
         this.router.navigateByUrl('');
         break;
 
-      case "Quiénes somos":
-        this.menuService.quienesSomosIsActive = true;
+      case "quienes-somos":
+        this.quienesSomosIsActive = true;
         this.router.navigateByUrl('quienes-somos');
         break;
 
-      case "Qué Hacemos ...":
-        this.menuService.queHacemosIsActive = true;
+      case "que-hacemos":
+        this.queHacemosIsActive = true;
         break;
 
-      case "Tu página web a medida":
-        this.menuService.queHacemosIsActive = true;
-        this.menuService.tuPaginaWebIsActive = true;
+      case "tu-pagina-web-a-medida":
+        this.queHacemosIsActive = true;
+        this.tuPaginaWebIsActive = true;
         this.router.navigateByUrl('tu-pagina-web-a-medida');
         break;
 
-      case "SEO, posicionamos tu web":
-        this.menuService.queHacemosIsActive = true;
-        this.menuService.seoPosicionamosTuWebIsActive = true;
+      case "seo-posicionamos-tu-web":
+        this.queHacemosIsActive = true;
+        this.seoPosicionamosTuWebIsActive = true;
         this.router.navigateByUrl('seo-posicionamos-tu-web');
 
         break;
 
-      case "Dominio personalizado":
-        this.menuService.queHacemosIsActive = true;
-        this.menuService.dominioPersonalizadoIsActive = true;
+      case "dominio-personalizado":
+        this.queHacemosIsActive = true;
+        this.dominioPersonalizadoIsActive = true;
         this.router.navigateByUrl('dominio-personalizado');
         break;
 
-      case "Evolutivos de tu web":
-        this.menuService.queHacemosIsActive = true;
-        this.menuService.evolutivosDeTuWebIsActive = true;
+      case "evolutivos-de-tu-web":
+        this.queHacemosIsActive = true;
+        this.evolutivosDeTuWebIsActive = true;
         this.router.navigateByUrl('evolutivos-de-tu-web');
         break;
 
-      case "Soporte y mantenimiento":
-        this.menuService.queHacemosIsActive = true;
-        this.menuService.soporteYMantenimientoIsActive = true;
+      case "soporte-y-mantenimiento":
+        this.queHacemosIsActive = true;
+        this.soporteYMantenimientoIsActive = true;
         this.router.navigateByUrl('soporte-y-mantenimiento');
         break;
 
-      case "Portafolio":
-        this.menuService.portafolioIsActive = true;
+      case "portafolio":
+        this.portafolioIsActive = true;
         this.router.navigateByUrl('portafolio');
         break;
 
-      case "Blog":
-        this.menuService.blogIsActive = true;
+      case "blog":
+        this.blogIsActive = true;
         this.router.navigateByUrl('blog');
         break;
 
-      case "Contacto":
-        this.menuService.contactoIsActive = true;
+      case "contacto":
+        this.contactoIsActive = true;
         this.router.navigateByUrl('contacto');
         break;
 
