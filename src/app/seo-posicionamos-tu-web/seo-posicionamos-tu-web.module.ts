@@ -12,6 +12,7 @@ import { IonicModule } from '@ionic/angular';
 import { MobileBodyHeaderModule } from '../shared/mobile-body-header/mobile-body-header.module';
 import { TapeModule } from '../shared/tape/tape.module';
 import { DesktopBodyHeaderModule } from '../shared/desktop-body-header/desktop-body-header.module';
+import { GenericIonMenuModule } from '../shared/generic-ion-menu/generic-ion-menu.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DesktopBodyHeaderModule } from '../shared/desktop-body-header/desktop-b
     IonicModule,
     MobileBodyHeaderModule,
     DesktopBodyHeaderModule,
-    TapeModule
+    TapeModule,
+    GenericIonMenuModule
   ]
 })
 export class SeoPosicionamosTuWebModule { }

@@ -12,6 +12,7 @@ import { BodyDominioPersonalizadoComponent } from './body-dominio-personalizado/
 import { MobileBodyHeaderModule } from '../shared/mobile-body-header/mobile-body-header.module';
 import { DesktopBodyHeaderModule } from '../shared/desktop-body-header/desktop-body-header.module';
 import { TapeModule } from '../shared/tape/tape.module';
+import { GenericIonMenuModule } from '../shared/generic-ion-menu/generic-ion-menu.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TapeModule } from '../shared/tape/tape.module';
     IonicModule,
     MobileBodyHeaderModule,
     DesktopBodyHeaderModule,
-    TapeModule
+    TapeModule,
+    GenericIonMenuModule
   ]
 })
 export class DominioPersonalizadoModule { }

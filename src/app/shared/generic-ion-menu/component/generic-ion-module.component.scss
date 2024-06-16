@@ -1,0 +1,16 @@
+
+/*Globas styles*/
+
+// Small devices (landscape phones, 0px and up)
+@media (min-width: 0px) {
+  @import "./generic-ion-module-mobile.component.scss";
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  @import "./generic-ion-module-tablet.component.scss";
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  @import "./generic-ion-module-desktop.component.scss";
+}

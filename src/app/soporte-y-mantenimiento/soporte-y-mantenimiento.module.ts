@@ -13,6 +13,7 @@ import { DesktopBodyHeaderModule } from '../shared/desktop-body-header/desktop-b
 import { TapeModule } from '../shared/tape/tape.module';
 import { IonicModule } from '@ionic/angular';
 import { SlideSoporteYMantenimientoComponent } from './slide-soporte-y-mantenimiento/slide-soporte-y-mantenimiento.component';
+import { GenericIonMenuModule } from '../shared/generic-ion-menu/generic-ion-menu.module';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { SlideSoporteYMantenimientoComponent } from './slide-soporte-y-mantenimi
     MobileBodyHeaderModule,
     DesktopBodyHeaderModule,
     TapeModule,
-    IonicModule
+    IonicModule,
+    GenericIonMenuModule
   ]
 })
 export class SoporteYMantenimientoModule { }

@@ -11,6 +11,7 @@ import { BodyQuienesSomosComponent } from './body-quienes-somos/body-quienes-som
 import { SlideMobileMenuQuienesSomosComponent } from './slide-mobile-menu-quienes-somos/slide-mobile-menu-quienes-somos.component';
 import { TapeModule } from '../shared/tape/tape.module';
 import { LightTitleModule } from '../shared/light-title/light-title.module';
+import { GenericIonMenuModule } from '../shared/generic-ion-menu/generic-ion-menu.module';
 
 @NgModule({
   declarations: [QuienesSomosComponent, BodyQuienesSomosComponent, SlideMobileMenuQuienesSomosComponent],
@@ -23,7 +24,8 @@ import { LightTitleModule } from '../shared/light-title/light-title.module';
     MobileFooterModule,
     TapeModule,
     LightTitleModule,
-    IonicModule
+    IonicModule,
+    GenericIonMenuModule
   ]
 })
 export class QuienesSomosModule { }

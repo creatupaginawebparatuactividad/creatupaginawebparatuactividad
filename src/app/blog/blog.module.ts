@@ -12,6 +12,7 @@ import { BodyBlogComponent } from './body-blog/body-blog.component';
 import { TapeModule } from '../shared/tape/tape.module';
 import { MobileBodyHeaderModule } from '../shared/mobile-body-header/mobile-body-header.module';
 import { DesktopBodyHeaderModule } from '../shared/desktop-body-header/desktop-body-header.module';
+import { GenericIonMenuModule } from '../shared/generic-ion-menu/generic-ion-menu.module';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { DesktopBodyHeaderModule } from '../shared/desktop-body-header/desktop-b
     IonicModule,
     TapeModule,
     MobileBodyHeaderModule,
-    DesktopBodyHeaderModule
+    DesktopBodyHeaderModule,
+    GenericIonMenuModule
   ]
 })
 export class BlogModule { }

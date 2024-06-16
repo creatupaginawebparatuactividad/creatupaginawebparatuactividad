@@ -10,6 +10,7 @@ import { MenuModule } from '../shared/menu/menu.module';
 import { FooterModule } from '../shared/footer/footer.module';
 import { MobileFooterModule } from '../shared/mobile-footer/mobile-footer.module';
 import { TapeModule } from '../shared/tape/tape.module';
+import { GenericIonMenuModule } from '../shared/generic-ion-menu/generic-ion-menu.module';
 
 @NgModule({
   declarations: [HomeComponent, BodyComponent, SlideMobileMenuHomeComponent],
@@ -21,7 +22,8 @@ import { TapeModule } from '../shared/tape/tape.module';
     FooterModule,
     MobileFooterModule,
     TapeModule,
-    IonicModule
+    IonicModule,
+    GenericIonMenuModule
   ]
 })
 export class HomeModule { }
