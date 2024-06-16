@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-slide-mobile-menu',
-  templateUrl: './slide-mobile-menu.component.html',
-  styleUrls: ['./slide-mobile-menu.component.scss']
+  selector: 'app-slide-mobile-menu-home',
+  templateUrl: './slide-mobile-menu-home.component.html',
+  styleUrls: ['./slide-mobile-menu-home.component.scss']
 })
-export class SlideMobileMenuComponent {
+export class SlideMobileMenuHomeComponent {
   menu = 'assets/menu.png';
 
   constructor(private ionMenu: MenuController) { }
