@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import tajeJson from '../../../../tape-variables.json';
-import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import emailjs from 'emailjs-com';
+emailjs.init('TyoE7T9SkVJ0AbwpL');
 
 @Component({
   selector: 'app-body-contacto',
@@ -40,5 +42,32 @@ export class BodyContactoComponent {
 
   contacto(contactoForm: FormGroup) {
 
+    // const to = 'lgraul87@gmail.com';
+    // const subject = 'Crea tu página con Raúl Lora';
+    // const message = ''
+    //   + '\nNombre: ' + contactoForm.value.name
+    //   + '\nApellidos: ' + contactoForm.value.lastName
+    //   + '\nCorreo: ' + contactoForm.value.email
+    //   + '\nTeléfono: ' + contactoForm.value.phone
+    //   + '\nDescripción: ' + contactoForm.value.description;
+
+    // Datos de tu plantilla de EmailJS
+    const templateParams = {
+      to_name: contactoForm.value.name,
+      to_lastName: contactoForm.value.lastName,
+      to_email: contactoForm.value.email,
+      to_phone: contactoForm.value.phone,
+      subject: 'Crea tu página con Raúl Lora',
+      message: contactoForm.value.description
+    };
+
+    emailjs.send('service_6ollxy4', 'template_0p6ioqg', templateParams)
+      .then(function (response) {
+        console.log('Email sent successfully:', response.status, response.text);
+        alert('Email sent successfully!');
+      }, function (error) {
+        console.error('Error sending email:', error);
+        alert('Error sending email: ' + error.text);
+      });
   }
 }
