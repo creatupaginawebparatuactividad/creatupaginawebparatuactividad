@@ -25,19 +25,33 @@
   </div>
 </div>
 
-<div class="container container-700 mt-5 mb-5">
+<div class="container container-700 mt-5 mb-5 mobile-section margin-800">
   <div class="row">
     <div class="col text-size">
-      <P class="title">Busca en Google:</P>
-      <ul>
-        <li>Crea tu pagina con Raúl Lora.</li>
-        <li>Crea tu pagina con Raúl Lora.</li>
-        <li>Crea tu pagina con Raúl Lora.</li>
-        <li>Crea tu pagina con Raúl Lora.</li>
-      </ul>
-
+      <P class="title">Blogs:</P>
+      <div class="card" style="width: 650px;">
+        <img class="card-img-top" [src]="portafolioMobile" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Hecha un vistazo a nuestro portafolio y podras ver nuestras cualificaciones.</p>
+          <a class="btn btn-primary first-button mt-5 w-100" [href]="urlPortafolio">¡Hecha un vistazo!</a>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
 
+<div class="container container-700 mt-5 mb-5 desktop-section">
+  <div class="row">
+    <div class="col text-size">
+      <P class="title">Blogs:</P>
+      <div class="card" style="width: 650px;">
+        <img class="card-img-top" [src]="portafolioDesktop" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Hecha un vistazo a nuestro portafolio y podras ver nuestras cualificaciones.</p>
+          <a class="btn btn-primary first-button mt-5 w-100" [href]="urlPortafolio">¡Hecha un vistazo!</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

@@ -8,5 +8,7 @@ import tajeJson from './../../../../tape-variables.json';
 })
 export class BodyPortafolioComponent {
   tape: any = tajeJson;
-
+  portafolioMobile='assets/portafolio-card-m.png';
+  portafolioDesktop='assets/portafolio-card-d.png';
+  urlPortafolio='https://sites.google.com/view/raul-lora-gomez-portfolio/home?authuser=0';
 }
