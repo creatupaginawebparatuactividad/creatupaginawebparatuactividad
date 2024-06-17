@@ -16,10 +16,20 @@
 }
 
 .container-700 {
-  height: 800px;
+  height: 900px;
   font-size: var(--mobile-font-m);
 }
 
-li{
+li {
   margin-top: 15px;
+}
+
+.input-size {
+  height: 100px;
+  font-size: var(--mobile-font-m);
+}
+
+.submit-size {
+  font-size: var(--mobile-font-m);
+  margin-top: 200px;
 }

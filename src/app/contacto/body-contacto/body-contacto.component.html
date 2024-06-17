@@ -1,5 +1,4 @@
-<app-mobile-body-header class="mobile-section" [title]="'Contacto'"
-  [image]="'assets/contacto.webp'">
+<app-mobile-body-header class="mobile-section" [title]="'Contacto'" [image]="'assets/contacto.webp'">
 </app-mobile-body-header>
 
 <app-desktop-body-header class="desktop-section" [image]="'assets/contacto-mobile.jpg'" [title]="'Contacto:'"
@@ -28,19 +27,69 @@
 <div class="container container-700 mt-5 mb-5">
   <div class="row">
     <div class="col text-size">
-      <P class="title">Contacto:</P>
-      <ul>
-        <li>Contacto 1.</li>
-        <li>Contacto 2.</li>
-        <li>Contacto 3.</li>
-        <li>Contacto 4.</li>
-        <li>Contacto 5.</li>
-      </ul>
+      <form [formGroup]="contactoForm" (ngSubmit)="contacto(contactoForm)">
+
+        <P class="title">Contacto:</P>
+
+        <div>
+          <input class="form-control input-size mt-5" placeholder="Nombre" formControlName="name" type="text">
+          <div *ngIf="name?.hasError('required') && isSubmited">
+            <span class="text-danger">
+              * Nombre es obligatorio
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <input class="form-control input-size mt-5" placeholder="Apellidos " formControlName="lastName" type="text">
+          <div *ngIf="lastName?.hasError('required') && isSubmited">
+            <span class="text-danger">
+              * Apellidos es obligatorio
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <input class="form-control input-size mt-5" placeholder="Teléfono " formControlName="phone" type="text">
+          <div *ngIf="phone?.hasError('required') && isSubmited">
+            <span class="text-danger">
+              * Teléfono es obligatorio
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <input class="form-control input-size mt-5" placeholder="Email " formControlName="email" type="text">
+          <div *ngIf="email?.hasError('required') && isSubmited">
+            <span class="text-danger">
+              * Email es obligatorio
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <textarea class="form-control submit-size mt-5" placeholder="Descripción " formControlName="description" rows="4" cols="50">
+          </textarea>
+          <div *ngIf="description?.hasError('required') && isSubmited">
+            <span class="text-danger">
+              * Descripción es obligatorio
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-primary w-100 submit-size">Enviar</button>
+        </div>
+      </form>
+
     </div>
+
+
+
   </div>
 </div>
 
 <app-tape [title]="tape.contacto.title" [firstDescription]="tape.contacto.firstDescription"
-  [secondDescription]="tape.contacto.secondDescription"
-  [thirdDescription]="tape.contacto.thirdDescription" [textButton]="tape.contacto.textButton">
+  [secondDescription]="tape.contacto.secondDescription" [thirdDescription]="tape.contacto.thirdDescription"
+  [textButton]="tape.contacto.textButton">
 </app-tape>

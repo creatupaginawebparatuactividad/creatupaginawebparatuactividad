@@ -14,6 +14,7 @@ import { TapeModule } from '../shared/tape/tape.module';
 import { MobileBodyHeaderModule } from '../shared/mobile-body-header/mobile-body-header.module';
 import { DesktopBodyHeaderModule } from '../shared/desktop-body-header/desktop-body-header.module';
 import { GenericIonMenuModule } from '../shared/generic-ion-menu/generic-ion-menu.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { GenericIonMenuModule } from '../shared/generic-ion-menu/generic-ion-men
     TapeModule,
     MobileBodyHeaderModule,
     DesktopBodyHeaderModule,
-    GenericIonMenuModule
+    GenericIonMenuModule,
+    ReactiveFormsModule,
   ]
 })
 export class ContactoModule { }
