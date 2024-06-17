@@ -35,39 +35,30 @@ export class BodyContactoComponent {
       name: new FormControl('', [Validators.required]),
       lastName: new FormControl('', [Validators.required]),
       email: new FormControl('', [Validators.required, Validators.email]),
-      phone: new FormControl('', [Validators.required, Validators.pattern('/^\d{10}$/')]),
+      phone: new FormControl('', [Validators.required, Validators.pattern('[6-9]\\d{8}')]),
       description: new FormControl('', [Validators.required, Validators.minLength(10)]),
     });
   }
 
   contacto(contactoForm: FormGroup) {
+    this.isSubmited = true;
+    if (contactoForm.valid) {
+      const templateParams = {
+        to_name: contactoForm.value.name,
+        to_lastName: contactoForm.value.lastName,
+        to_email: contactoForm.value.email,
+        to_phone: contactoForm.value.phone,
+        subject: 'Crea tu página con Raúl Lora',
+        message: contactoForm.value.description
+      };
 
-    // const to = 'lgraul87@gmail.com';
-    // const subject = 'Crea tu página con Raúl Lora';
-    // const message = ''
-    //   + '\nNombre: ' + contactoForm.value.name
-    //   + '\nApellidos: ' + contactoForm.value.lastName
-    //   + '\nCorreo: ' + contactoForm.value.email
-    //   + '\nTeléfono: ' + contactoForm.value.phone
-    //   + '\nDescripción: ' + contactoForm.value.description;
+      emailjs.send('service_6ollxy4', 'template_0p6ioqg', templateParams)
+        .then(function (response) {
+          console.log('Email sent successfully:', response.status, response.text);
+        }, function (error) {
+          console.error('Error sending email:', error);
+        });
+    }
 
-    // Datos de tu plantilla de EmailJS
-    const templateParams = {
-      to_name: contactoForm.value.name,
-      to_lastName: contactoForm.value.lastName,
-      to_email: contactoForm.value.email,
-      to_phone: contactoForm.value.phone,
-      subject: 'Crea tu página con Raúl Lora',
-      message: contactoForm.value.description
-    };
-
-    emailjs.send('service_6ollxy4', 'template_0p6ioqg', templateParams)
-      .then(function (response) {
-        console.log('Email sent successfully:', response.status, response.text);
-        alert('Email sent successfully!');
-      }, function (error) {
-        console.error('Error sending email:', error);
-        alert('Error sending email: ' + error.text);
-      });
   }
 }
