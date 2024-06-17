@@ -20,6 +20,19 @@
   font-size: var(--mobile-font-m);
 }
 
-li{
+li {
   margin-top: 15px;
+}
+
+.margin-800 {
+  margin-bottom: 800px !important;
+}
+
+.first-button {
+  background-color: #012e46;
+  padding: 15px;
+  width: 330px;
+  height: 80px;
+  font-size: var(--mobile-font-s);
+  width: auto;
 }

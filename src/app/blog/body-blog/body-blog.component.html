@@ -25,17 +25,32 @@
   </div>
 </div>
 
-<div class="container container-700 mt-5 mb-5">
+<div class="container container-700 mt-5 mb-5 mobile-section margin-800">
   <div class="row">
     <div class="col text-size">
       <P class="title">Blogs:</P>
-      <ul>
-        <li>Blog 1.</li>
-        <li>Blog 2.</li>
-        <li>Blog 3.</li>
-        <li>Blog 4.</li>
-        <li>Blog 5.</li>
-      </ul>
+      <div class="card" style="width: 650px;">
+        <img class="card-img-top" src="./../../../assets/blog-card-m.png" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Crea tu pagina con Raúl Lora, tu sitio donde podrás informarte sobre precios y productos.</p>
+          <button class="btn btn-primary first-button mt-5 w-100" (click)="navigateToBlog()">¡Hecha un vistazo!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container container-700 mt-5 mb-5 desktop-section">
+  <div class="row">
+    <div class="col text-size">
+      <P class="title">Blogs:</P>
+      <div class="card" style="width: 650px;">
+        <img class="card-img-top" [src]="blogDesktop" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Crea tu pagina con Raúl Lora, tu sitio donde podrás informarte sobre precios y productos.</p>
+          <button class="btn btn-primary first-button mt-5 w-100" (click)="navigateToBlog()">¡Hecha un vistazo!</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
