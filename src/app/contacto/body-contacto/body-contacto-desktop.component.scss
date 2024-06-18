@@ -30,3 +30,7 @@
   background-color:  #012e46;
   height: 60px;
 }
+
+::ng-deep .modal-dialog{
+  min-width: 80%;
+}

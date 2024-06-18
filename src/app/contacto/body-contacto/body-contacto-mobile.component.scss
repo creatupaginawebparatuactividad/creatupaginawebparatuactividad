@@ -34,3 +34,11 @@ li {
   background-color: #012e46;
   height: 100px;
 }
+
+.arial-text{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::ng-deep .modal-dialog{
+  min-width: 100%;
+}

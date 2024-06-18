@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef, ViewChild, inject } from '@angular/core';
 import tajeJson from '../../../../tape-variables.json';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import emailjs from 'emailjs-com';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 emailjs.init('TyoE7T9SkVJ0AbwpL');
 
 @Component({
@@ -10,10 +11,16 @@ emailjs.init('TyoE7T9SkVJ0AbwpL');
   styleUrls: ['./body-contacto.component.scss']
 })
 export class BodyContactoComponent {
+  @ViewChild("contentD") modalContentD!: TemplateRef<any>;
+  @ViewChild("contentM") modalContentM!: TemplateRef<any>;
+
   tape: any = tajeJson;
   contactoForm!: FormGroup;
   isSubmited = false;
+  private modalService = inject(NgbModal);
 
+
+  constructor() { }
   get name() {
     return this.contactoForm.get('name');
   }
@@ -31,6 +38,7 @@ export class BodyContactoComponent {
   }
 
   ngOnInit() {
+
     this.contactoForm = new FormGroup({
       name: new FormControl('', [Validators.required]),
       lastName: new FormControl('', [Validators.required]),
@@ -39,6 +47,7 @@ export class BodyContactoComponent {
       description: new FormControl('', [Validators.required, Validators.minLength(10)]),
     });
   }
+
 
   contacto(contactoForm: FormGroup) {
     this.isSubmited = true;
@@ -58,7 +67,24 @@ export class BodyContactoComponent {
         }, function (error) {
           console.error('Error sending email:', error);
         });
+
+      if (window.screen.width > 992) {
+        this.openVerticallyCentered(this.modalContentD);
+
+      } else {
+        console.log(window.screen.width);
+        this.openFullscreen(this.modalContentM);
+      }
+      contactoForm.reset();
     }
 
+  }
+
+  openVerticallyCentered(content: TemplateRef<any>) {
+    this.modalService.open(content, { centered: true });
+  }
+
+  openFullscreen(content: TemplateRef<any>) {
+    this.modalService.open(content, { fullscreen: true });
   }
 }
