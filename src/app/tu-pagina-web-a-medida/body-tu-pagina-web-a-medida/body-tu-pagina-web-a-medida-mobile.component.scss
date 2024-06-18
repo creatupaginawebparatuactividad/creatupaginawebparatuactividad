@@ -5,11 +5,11 @@
 }
 
 .first-description {
-  font-size: var(--mobile-font-s);
+  font-size: var(--mobile-font-m);
 }
 
 li {
-  font-size: var(--mobile-font-s);
+  font-size: var(--mobile-font-m);
 }
 
 .screen-behavior {
@@ -27,4 +27,8 @@ li {
 .title{
   font-size: var(--mobile-font-xl);
   font-weight: bold;
+}
+
+li{
+  margin-top: 20px;
 }
