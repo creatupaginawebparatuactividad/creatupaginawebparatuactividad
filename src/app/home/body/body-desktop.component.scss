@@ -53,3 +53,34 @@
   width: 240px;
   height: 60px;
 }
+
+.mobile-section {
+  display: none;
+}
+
+.desktop-section {
+  display: block;
+}
+
+::ng-deep .modal-dialog {
+  min-width: 100%;
+}
+
+.submit-size {
+  height: 40px;
+  width:  200px;
+  font-size: var(--desktop-font-s);
+  margin-top: 70px;
+  background-color: #012e46;
+}
+
+::ng-deep .modal.show .modal-dialog {
+  transform: none;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.text-size {
+  font-size: var(--desktop-font-m);
+}

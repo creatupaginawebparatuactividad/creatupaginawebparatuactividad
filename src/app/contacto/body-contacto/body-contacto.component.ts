@@ -38,7 +38,6 @@ export class BodyContactoComponent {
   }
 
   ngOnInit() {
-
     this.contactoForm = new FormGroup({
       name: new FormControl('', [Validators.required]),
       lastName: new FormControl('', [Validators.required]),
@@ -72,7 +71,6 @@ export class BodyContactoComponent {
         this.openVerticallyCentered(this.modalContentD);
 
       } else {
-        console.log(window.screen.width);
         this.openFullscreen(this.modalContentM);
       }
       contactoForm.reset();

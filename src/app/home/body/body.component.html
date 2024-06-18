@@ -1,133 +1,187 @@
 <div class="row bg-white body-container">
-    <div class="col p-0">
-        <div class="background-cima"></div>
-        <div class="d-flex justify-content-center position-absolute w-100">
-            <div class="middle-container">
-                <div class="container w-75 mt-4">
-                    <div class="row mt-5">
-                        <div class="col text-center">
-                          <p class="fs-2">DESARROLLAMOS TU NEGOCIO</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col text-center mt-3">
-                            <p class="fs-2 middle-container-title">SOLICITA TU PÁGINA</p>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col text-center">
-                            <button class="btn btn-primary middle-container-button"
-                                (click)="navigateToContacto()">Reserva una consulta</button>
-                        </div>
-                    </div>
-                </div>
+  <div class="col p-0">
+    <div class="background-cima"></div>
+    <div class="d-flex justify-content-center position-absolute w-100">
+      <div class="middle-container">
+        <div class="container w-75 mt-4">
+          <div class="row mt-5">
+            <div class="col text-center">
+              <p class="fs-2">DESARROLLAMOS TU NEGOCIO</p>
             </div>
-        </div>
-        <div class="container first-container">
-            <div class="row h-100">
-
-                <div class="col-4 border border-secondary border-end-0 text-center">
-                    <div class="container h-100">
-                        <div class="me-4 ms-4 h-100">
-                            <div class="row h-25">
-                                <div class="col d-flex align-items-end justify-content-center">
-                                    <p class="marine-text-color fs-2">ASESORAMIENTO</p>
-                                </div>
-                            </div>
-
-                            <div class="row h-50">
-                                <div class="col d-flex aligns-items-center">
-                                    <p>Te asesoramos antes, durante y a largo plazo sobre cuales son tus
-                                        principales intereses informativos de tu página
-                                        <br>
-                                        <br>
-                                        Puedes consultarnos a traves de nuestro teléfono, via e-mail o con cita previa.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="row h-25">
-                                <div class="col">
-                                    <button class="btn btn-primary first-button" (click)="navigateToContacto()">Más
-                                        información</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-4 border border-secondary text-center">
-                    <div class="container h-100">
-                        <div class="me-4 ms-4 h-100">
-                            <div class="row h-25">
-                                <div class="col d-flex align-items-end justify-content-center">
-                                    <p class="marine-text-color fs-2">INCREMENTO</p>
-                                </div>
-                            </div>
-
-                            <div class="row h-50">
-                                <div class="col d-flex aligns-items-center">
-                                    <p>Tu proyecto o página puede estar en constante crecimiento con nosotros, gracias a
-                                        la escalabilidad que ofrecemos.
-                                        <br>
-                                        <br>
-                                        Tú decides cuales son tus límites.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="row h-25">
-                                <div class="col">
-                                    <button class="btn btn-primary first-button" (click)="navigateToContacto()">Más
-                                        información</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-4 border border-secondary border-start-0 text-center">
-                    <div class="container h-100">
-                        <div class="me-4 ms-4 h-100">
-                            <div class="row h-25">
-                                <div class="col d-flex align-items-end justify-content-center">
-                                    <p class="marine-text-color fs-2">SOPORTE</p>
-                                </div>
-                            </div>
-
-                            <div class="row h-50">
-                                <div class="col d-flex aligns-items-center">
-                                    <p>Siempre estarás protegido, porque nosotros realizamos los desarrollos desde cero
-                                        ofreciendote la mejor cobertura.
-                                        <br>
-                                        <br>
-                                        Te garantizamos el correcto funcionamiento sobre lo contratado.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="row h-25">
-                                <div class="col">
-                                    <button class="btn btn-primary first-button" (click)="navigateToContacto()">Más
-                                        información</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col text-center mt-3">
+              <p class="fs-2 middle-container-title">SOLICITA TU PÁGINA</p>
             </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col text-center">
+              <button class="btn btn-primary middle-container-button" (click)="navigateToContacto()">Reserva una
+                consulta</button>
+            </div>
+          </div>
         </div>
-        <app-tape
-        [title]="tape.home.title"
-        [firstDescription]="tape.home.firstDescription"
-        [secondDescription]="tape.home.secondDescription"
-        [thirdDescription]="tape.home.thirdDescription"
-        [textButton]="tape.home.textButton"
-        ></app-tape>
+      </div>
     </div>
+    <div class="container first-container">
+      <div class="row h-100">
+
+        <div class="col-4 border border-secondary border-end-0 text-center">
+          <div class="container h-100">
+            <div class="me-4 ms-4 h-100">
+              <div class="row h-25">
+                <div class="col d-flex align-items-end justify-content-center">
+                  <p class="marine-text-color fs-2">ASESORAMIENTO</p>
+                </div>
+              </div>
+
+              <div class="row h-50">
+                <div class="col d-flex aligns-items-center">
+                  <p>Te asesoramos antes, durante y a largo plazo sobre cuales son tus
+                    principales intereses informativos de tu página
+                    <br>
+                    <br>
+                    Puedes consultarnos a traves de nuestro teléfono, via e-mail o con cita previa.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row h-25">
+                <div class="col">
+                  <button class="btn btn-primary first-button" (click)="navigateToContacto()">Más
+                    información</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-4 border border-secondary text-center">
+          <div class="container h-100">
+            <div class="me-4 ms-4 h-100">
+              <div class="row h-25">
+                <div class="col d-flex align-items-end justify-content-center">
+                  <p class="marine-text-color fs-2">INCREMENTO</p>
+                </div>
+              </div>
+
+              <div class="row h-50">
+                <div class="col d-flex aligns-items-center">
+                  <p>Tu proyecto o página puede estar en constante crecimiento con nosotros, gracias a
+                    la escalabilidad que ofrecemos.
+                    <br>
+                    <br>
+                    Tú decides cuales son tus límites.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row h-25">
+                <div class="col">
+                  <button class="btn btn-primary first-button" (click)="navigateToContacto()">Más
+                    información</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-4 border border-secondary border-start-0 text-center">
+          <div class="container h-100">
+            <div class="me-4 ms-4 h-100">
+              <div class="row h-25">
+                <div class="col d-flex align-items-end justify-content-center">
+                  <p class="marine-text-color fs-2">SOPORTE</p>
+                </div>
+              </div>
+
+              <div class="row h-50">
+                <div class="col d-flex aligns-items-center">
+                  <p>Siempre estarás protegido, porque nosotros realizamos los desarrollos desde cero
+                    ofreciendote la mejor cobertura.
+                    <br>
+                    <br>
+                    Te garantizamos el correcto funcionamiento sobre lo contratado.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row h-25">
+                <div class="col">
+                  <button class="btn btn-primary first-button" (click)="navigateToContacto()">Más
+                    información</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-tape [title]="tape.home.title" [firstDescription]="tape.home.firstDescription"
+      [secondDescription]="tape.home.secondDescription" [thirdDescription]="tape.home.thirdDescription"
+      [textButton]="tape.home.textButton">
+    </app-tape>
+
+    <ng-template #contentD let-modal class="desktop-section min-width-80">
+      <div class="modal-header border-bottom-0">
+        <h4 class="modal-title title">Configuración de cookies</h4>
+      </div>
+      <div class="modal-body arial-text">
+        <p class="text-size">En LG usamos las cookies para posibilitar la navegación, mejorar la usabilidad como usuario
+          de nuestra página web, adaptándola a tus hábitos de navegación, obtener información con fines estadísticos,
+          posibilitar la identificación de nuestros clientes en el acceso a nuestras herramientas y a la vez ofrecerte
+          ofertas relevantes y específicas. A través de este Panel puedes seleccionar los tipos de cookies que aceptas,
+          marcándolas y haciendo clic en Enviar preferencias. Estas pueden ser modificadas en cualquier momento a través
+          de tu configuración</p>
+
+      </div>
+      <div class="modal-footer border-top-0">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-secondary submit-size ms-3 mt-0"
+              (click)="modal.close('Close click')">ACEPTAR COOKIES
+            </button>
+            <button type="button" class="btn btn-secondary submit-size ms-3 mt-0"
+              (click)="modal.close('Close click')">MÍNIMAS COOKIES
+            </button>
+            <a type="button" class="btn btn-secondary submit-size ms-3 mt-0" href="https://www.google.es/">RECHAZAR
+              COOKIES
+            </a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+
+    <ng-template #contentM let-modal class="mobile-section">
+
+      <div class="modal-body arial-text">
+        <p class="text-size">En LG usamos las cookies para posibilitar la navegación, mejorar la usabilidad como usuario
+          de nuestra página web, adaptándola a tus hábitos de navegación, obtener información con fines estadísticos,
+          posibilitar la identificación de nuestros clientes en el acceso a nuestras herramientas y a la vez ofrecerte
+          ofertas relevantes y específicas.</p>
+
+      </div>
+      <div class="modal-footer border-top-0">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-secondary submit-size ms-3 mt-0"
+              (click)="modal.close('Close click')">ACEPTAR COOKIES
+            </button>
+            <button type="button" class="btn btn-secondary submit-size ms-3 mt-0"
+              (click)="modal.close('Close click')">MÍNIMAS COOKIES
+            </button>
+            <a type="button" class="btn btn-secondary submit-size ms-3 mt-0" href="https://www.google.es/">
+            <p class="mt-2">RECHAZAR</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+
+  </div>
 </div>
