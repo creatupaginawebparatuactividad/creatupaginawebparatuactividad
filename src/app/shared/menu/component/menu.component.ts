@@ -34,6 +34,7 @@ export class MenuComponent {
   setMenuLinksStyleSelected(event: Event) {
     const menuLinkNodeSelectedId = (event.currentTarget as HTMLElement).id;
     this.navigateToPageSelected(menuLinkNodeSelectedId);
+    return true;
   }
 
   setMenuLinksStyle() {
