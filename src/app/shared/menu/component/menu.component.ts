@@ -25,7 +25,7 @@ export class MenuComponent {
   contactoIsActive = false;
 
   ngAfterViewInit(): void {
-    const tab = window.location.href.split("http://localhost:4200/");
+    const tab = window.location.href.split("https://creatupaginawebparatuact-80022.web.app/");
     const page = tab[1]
     this.setMenuLinksStyle()
     this.navigateToPageSelected(page);
