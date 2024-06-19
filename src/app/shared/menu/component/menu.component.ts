@@ -8,7 +8,7 @@ import { MenuService } from '../../menu.service';
   styleUrls: ['./menu.component.scss']
 })
 
-export class MenuComponent implements OnInit {
+export class MenuComponent {
 
   constructor(private router: Router, private menuService: MenuService) { }
 
@@ -24,7 +24,7 @@ export class MenuComponent implements OnInit {
   blogIsActive = false;
   contactoIsActive = false;
 
-  ngOnInit() {
+  ngAfterViewInit(): void {
     const tab = window.location.href.split("http://localhost:4200/");
     const page = tab[1]
     this.setMenuLinksStyle()
