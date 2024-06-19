@@ -127,7 +127,7 @@
       [textButton]="tape.home.textButton">
     </app-tape>
 
-    <ng-template #contentD let-modal class="desktop-section min-width-80">
+    <ng-template #contentDe let-modal class="desktop-section min-width-80">
       <div class="modal-header border-bottom-0">
         <h4 class="modal-title title">Configuración de cookies</h4>
       </div>
@@ -144,10 +144,10 @@
         <div class="row">
           <div class="col">
             <button type="button" class="btn btn-secondary submit-size ms-3 mt-0"
-              (click)="modal.close('Close click')">ACEPTAR COOKIES
+              (click)="close()">ACEPTAR COOKIES
             </button>
             <button type="button" class="btn btn-secondary submit-size ms-3 mt-0"
-              (click)="modal.close('Close click')">MÍNIMAS COOKIES
+              (click)="close()">MÍNIMAS COOKIES
             </button>
             <a type="button" class="btn btn-secondary submit-size ms-3 mt-0" href="https://www.google.es/">RECHAZAR
               COOKIES
@@ -157,7 +157,7 @@
       </div>
     </ng-template>
 
-    <ng-template #contentM let-modal class="mobile-section">
+    <ng-template #contentMe let-modal class="mobile-section">
 
       <div class="modal-body arial-text">
         <p class="text-size">En LG usamos las cookies para posibilitar la navegación, mejorar la usabilidad como usuario
@@ -170,10 +170,10 @@
         <div class="row">
           <div class="col">
             <button type="button" class="btn btn-secondary submit-size ms-3 mt-0"
-              (click)="modal.close('Close click')">ACEPTAR COOKIES
+              (click)="close()">ACEPTAR COOKIES
             </button>
             <button type="button" class="btn btn-secondary submit-size ms-3 mt-0"
-              (click)="modal.close('Close click')">MÍNIMAS COOKIES
+              (click)="close()">MÍNIMAS COOKIES
             </button>
             <a type="button" class="btn btn-secondary submit-size ms-3 mt-0" href="https://www.google.es/">
             <p class="mt-2">RECHAZAR</p>

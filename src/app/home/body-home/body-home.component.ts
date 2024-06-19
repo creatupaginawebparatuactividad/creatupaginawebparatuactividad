@@ -1,17 +1,17 @@
 import { Component, TemplateRef, ViewChild, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import tajeJson from './../../../../tape-variables.json';
+import tajeJson from '../../../../tape-variables.json';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-body',
-  templateUrl: './body.component.html',
-  styleUrls: ['./body.component.scss'],
+  templateUrl: './body-home.component.html',
+  styleUrls: ['./body-home.component.scss'],
 })
-export class BodyComponent {
+export class BodyHomeComponent {
   constructor(private router: Router) { }
-  @ViewChild("contentD") modalContentD!: TemplateRef<any>;
-  @ViewChild("contentM") modalContentM!: TemplateRef<any>;
+  @ViewChild("contentDe") modalContentDe!: TemplateRef<any>;
+  @ViewChild("contentMe") modalContentMe!: TemplateRef<any>;
   private modalService = inject(NgbModal);
   tape: any = tajeJson;
 
@@ -20,24 +20,25 @@ export class BodyComponent {
       sessionStorage.setItem("cookies", "yes");
     }
     if (sessionStorage.getItem('cookies') === 'yes') {
-      sessionStorage.setItem("cookies", "no");
       if (window.screen.width > 992) {
-        this.openVerticallyCentered(this.modalContentD);
+        this.open(this.modalContentDe);
 
       } else {
-        this.openVerticallyCentered(this.modalContentM);
+        this.open(this.modalContentMe);
       }
-
     }
-
   }
 
   navigateToContacto() {
     this.router.navigateByUrl('contacto');
   }
 
-  openVerticallyCentered(content: TemplateRef<any>) {
+  open(content: TemplateRef<any>) {
     this.modalService.open(content);
   }
 
+  close() {
+    this.modalService.dismissAll();
+    sessionStorage.setItem("cookies", "no");
+  }
 }

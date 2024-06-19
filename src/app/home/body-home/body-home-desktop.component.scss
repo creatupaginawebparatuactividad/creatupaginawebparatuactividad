@@ -7,83 +7,80 @@
 }
 
 .body-container {
-  height: 3000px;
+  height: 2600px;
 }
 
 .first-container {
-  display: none;
+  display: block;
+  margin-top: 6rem;
+  height: 400px;
 }
 
 .middle-container {
   position: relative;
-  height: 350px;
+  height: 250px;
   width: 750px;
   background-color: white;
-  bottom: 160px;
+  bottom: 250px;
 }
+
 .middle-container-title {
-  font-size: var(--mobile-font-xl);
+  font-size: var(--desktop-font-xl);
   color: #012e46;
 }
 
 .middle-container-button {
   background-color: #012e46;
   padding: 15px;
-  width: 330px;
-  height: 80px;
-  font-size: var(--mobile-font-s);
-}
-
-.second-container-box {
-  width: 800px;
-  height: 100%;
-  margin-top: 17rem;
+  font-size: var(--desktop-font-m);
+  width: 240px;
+  height: 60px;
 }
 
 .h4 {
-  font-size: var(--mobile-font-m);
+  font-size: var(--desktop-font-m);
 }
 
 .h1 {
-  font-size: var(--mobile-font-xl);
-  margin-top: -2rem;
+  font-size: var(--desktop-font-xl);
+  margin-top: 5rem;
 }
 
 .first-button {
   background-color: #012e46;
-  padding: 15px;
-  width: 330px;
-  height: 100px;
-  font-size: var(--mobile-font-m);
+  padding: 10px;
+  font-size: var(--desktop-font-s);
+  width: 240px;
+  height: 60px;
 }
 
 .mobile-section {
-  display: block;
-}
-
-.desktop-section {
   display: none;
 }
 
-::ng-deep .modal-dialog{
+.desktop-section {
+  display: block;
+}
+
+::ng-deep .modal-dialog {
   min-width: 100%;
 }
 
 .submit-size {
-  height: 60px;
-  width:  250px;
-  font-size: var(--desktop-font-m);
+  height: 40px;
+  width:  200px;
+  font-size: var(--desktop-font-s);
   margin-top: 70px;
   background-color: #012e46;
 }
 
-::ng-deep .modal.show .modal-dialog {
+::ng-deep .modal-dialog {
   transform: none;
   position: absolute;
-  top: 0px;
-  margin-top: 0px;
+  bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .text-size {
-  font-size: var(--mobile-font-m);
+  font-size: var(--desktop-font-m);
 }
