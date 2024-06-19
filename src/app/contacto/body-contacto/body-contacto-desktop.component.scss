@@ -10,7 +10,7 @@
   display: none;
 }
 
-.title{
+.title {
   font-size: var(--desktop-font-xl);
   font-weight: bold;
 }
@@ -19,7 +19,7 @@
   height: auto;
 }
 
-.input-size{
+.input-size {
   height: 70px;
   font-size: var(--desktop-font-m);
 }
@@ -27,10 +27,12 @@
 .submit-size {
   font-size: var(--desktop-font-m);
   margin-top: 70px;
-  background-color:  #012e46;
+  background-color: #012e46;
   height: 60px;
 }
 
-::ng-deep .modal-dialog{
+::ng-deep .modal-dialog {
   min-width: 80%;
+  display: flex;
+  justify-content: center;
 }
