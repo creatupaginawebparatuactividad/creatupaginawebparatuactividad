@@ -29,10 +29,11 @@
   margin-top: 70px;
   background-color: #012e46;
   height: 60px;
+  width: 110px;
 }
 
 ::ng-deep .modal-dialog {
-  min-width: 80%;
+  min-width: 100%;
   display: flex;
   justify-content: center;
 }

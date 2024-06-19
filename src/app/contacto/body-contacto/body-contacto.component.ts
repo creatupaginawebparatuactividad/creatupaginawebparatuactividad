@@ -79,7 +79,10 @@ export class BodyContactoComponent {
   }
 
   openVerticallyCentered(content: TemplateRef<any>) {
-    this.modalService.open(content, { centered: true });
+    this.modalService.open(content, {
+      centered: true,
+      backdrop: 'static',
+    });
   }
 
   openFullscreen(content: TemplateRef<any>) {
