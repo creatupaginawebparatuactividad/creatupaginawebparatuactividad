@@ -39,4 +39,5 @@ export class BodyComponent {
   openVerticallyCentered(content: TemplateRef<any>) {
     this.modalService.open(content);
   }
+
 }
