@@ -2,13 +2,21 @@
   font-size: var(--desktop-font-xl);
 }
 
-.first-background {
-  background-image: url("./../../../assets/tecnology-person.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 800px;
+.mobile-section {
+  display: none;
 }
+
+.desktop-section {
+  display: block;
+}
+
+// .first-background {
+//   background-image: url("./../../../assets/tecnology-person.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center center;
+//   height: 800px;
+// }
 
 .marine-background {
   background-color: #012e46;

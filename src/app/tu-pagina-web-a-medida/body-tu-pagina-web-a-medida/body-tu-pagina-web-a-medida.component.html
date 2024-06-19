@@ -1,21 +1,47 @@
-<div class="row screen-behavior">
+<app-mobile-body-header class="mobile-section" [title]="'Tu página web a medida'" [image]="'assets/tecnology-person.jpg'">
+</app-mobile-body-header>
+
+<app-desktop-body-header class="desktop-section"
+[image]="'assets/tecnology-person.jpg'"
+[title]="'Tu página web a medida'"
+[firstDescription]="'En LG, somos más que una empresa tecnológica.'"
+[secondDescription]="'Somos tu aliado que nunca te falla.'"
+[thirdDescription]="'¿Qué hacemos?'">
+</app-desktop-body-header>
+
+<!-- <div class="row screen-behavior">
   <div class="col d-flex justify-content-center align-items-center text-white first-background">
     <div class="rounded ps-4 pe-4 mt-5 marine-background">
       <p class="first-size-text">We are LG, wings for your dreams</p>
     </div>
   </div>
-</div>
+</div> -->
 
-<div class="container container-700 mt-5 mb-5">
+<!-- <div class="container container-700 mt-5 mb-5">
   <div class="row">
     <div class="col">
       <p class="first-title title"> <b>En LG, somos más que una empresa tecnológica.</b> </p>
       <p class="first-description title">Somos tu aliado que nunca te falla.</p>
     </div>
   </div>
+</div> -->
+
+<div class="container container-700 mt-5 mb-5 mobile-section">
+  <div class="row">
+      <div class="col">
+          <p class="title">We are LG, wings for your dreams.
+
+          <p class="text-size">En LG, somos más que una empresa tecnológica.
+              <br> <br>
+              Somos tu aliado que nunca te falla.
+              <br> <br>
+              ¿Qué hacemos?
+              <br> <br>
+          </p>
+      </div>
+  </div>
 </div>
 
-<app-light-title [lightTitle]="lightTitle.tuPaginaWebAMedida.title"></app-light-title>
 
 <div class="container container-900 mt-5 mb-5">
   <div class="row">

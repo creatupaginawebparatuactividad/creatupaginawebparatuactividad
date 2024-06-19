@@ -4,6 +4,14 @@
   margin-bottom: 3rem;
 }
 
+.mobile-section {
+  display: block;
+}
+
+.desktop-section {
+  display: none;
+}
+
 .first-description {
   font-size: var(--mobile-font-m);
 }

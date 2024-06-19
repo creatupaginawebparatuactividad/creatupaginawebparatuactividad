@@ -12,6 +12,8 @@ import { BodyTuPaginaWebAMedidaComponent } from './body-tu-pagina-web-a-medida/b
 import { LightTitleModule } from '../shared/light-title/light-title.module';
 import { TapeModule } from '../shared/tape/tape.module';
 import { GenericIonMenuModule } from '../shared/generic-ion-menu/generic-ion-menu.module';
+import { MobileBodyHeaderModule } from '../shared/mobile-body-header/mobile-body-header.module';
+import { DesktopBodyHeaderModule } from '../shared/desktop-body-header/desktop-body-header.module';
 
 @NgModule({
   declarations: [ TuPaginaWebAMedidaComponent, SlideMobileMenuTuPaginaWebAMedidaComponent,  BodyTuPaginaWebAMedidaComponent],
@@ -25,7 +27,9 @@ import { GenericIonMenuModule } from '../shared/generic-ion-menu/generic-ion-men
     LightTitleModule,
     TapeModule,
     IonicModule,
-    GenericIonMenuModule
+    GenericIonMenuModule,
+    MobileBodyHeaderModule,
+    DesktopBodyHeaderModule
   ]
 })
 export class TuPaginaWebAMedidaModule { }
