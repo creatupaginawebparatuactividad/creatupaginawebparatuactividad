@@ -10,7 +10,7 @@
   display: none;
 }
 
-.title{
+.title {
   font-size: var(--desktop-font-xl);
   font-weight: bold;
 }
@@ -26,4 +26,13 @@
   height: 50px;
   font-size: var(--desktop-font-s);
   width: auto;
+}
+
+.video-style {
+  object-fit: cover;
+}
+
+.div-video {
+  height: 465px;
+  width: 650px;
 }

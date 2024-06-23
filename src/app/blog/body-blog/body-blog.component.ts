@@ -11,8 +11,9 @@ export class BodyBlogComponent {
   tape: any = tajeJson;
   blogMobile = 'assets/blog-card-m.png';
   blogDesktop = 'assets/blog-card-d.png';
+  blogVideo = 'assets/clip-lg.mp4'
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   navigateToBlog() {
     this.router.navigateByUrl('');
